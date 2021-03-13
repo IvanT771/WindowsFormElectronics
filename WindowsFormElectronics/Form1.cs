@@ -30,18 +30,22 @@ namespace WindowsFormElectronics
             int height = (int)(panelMaterial.Size.Height) - 10;
             buttonSi.Width = width;
             buttonSi.Height = height;
+            buttonSi.Font = new Font(buttonSi.Font.FontFamily,width/6, buttonSi.Font.Style);
             buttonSi.Location = new Point(5,5);
 
             buttonGe.Width = width;
             buttonGe.Height = height;
+            buttonGe.Font = buttonSi.Font;
             buttonGe.Location = new Point(width+10,5);
 
             buttonGaAs.Width = width;
             buttonGaAs.Height = height;
+            buttonGaAs.Font = buttonSi.Font;
             buttonGaAs.Location = new Point(width*2+15,5);
 
             buttonInP.Width = width;
             buttonInP.Height = height;
+            buttonInP.Font = buttonSi.Font;
             buttonInP.Location = new Point(width*3+20,5);
         }
     }
