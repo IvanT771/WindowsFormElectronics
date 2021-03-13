@@ -49,7 +49,7 @@ namespace WindowsFormElectronics
             this.buttonInP = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelInput = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -82,7 +82,7 @@ namespace WindowsFormElectronics
             this.panel6.SuspendLayout();
             this.panelMaterial.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panelInput.SuspendLayout();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -278,7 +278,7 @@ namespace WindowsFormElectronics
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panelInput);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 85);
             this.panel1.Name = "panel1";
@@ -287,42 +287,42 @@ namespace WindowsFormElectronics
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox1.Location = new System.Drawing.Point(222, 26);
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox1.Location = new System.Drawing.Point(230, 25);
             this.richTextBox1.MaxLength = 100;
             this.richTextBox1.Multiline = false;
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox1.Size = new System.Drawing.Size(152, 30);
+            this.richTextBox1.Size = new System.Drawing.Size(150, 30);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "0";
             // 
-            // panel2
+            // panelInput
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.richTextBox6);
-            this.panel2.Controls.Add(this.richTextBox5);
-            this.panel2.Controls.Add(this.richTextBox4);
-            this.panel2.Controls.Add(this.richTextBox3);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.richTextBox2);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.richTextBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(380, 250);
-            this.panel2.TabIndex = 1;
+            this.panelInput.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelInput.Controls.Add(this.label8);
+            this.panelInput.Controls.Add(this.label7);
+            this.panelInput.Controls.Add(this.label6);
+            this.panelInput.Controls.Add(this.richTextBox6);
+            this.panelInput.Controls.Add(this.richTextBox5);
+            this.panelInput.Controls.Add(this.richTextBox4);
+            this.panelInput.Controls.Add(this.richTextBox3);
+            this.panelInput.Controls.Add(this.label5);
+            this.panelInput.Controls.Add(this.label4);
+            this.panelInput.Controls.Add(this.richTextBox2);
+            this.panelInput.Controls.Add(this.label3);
+            this.panelInput.Controls.Add(this.richTextBox1);
+            this.panelInput.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelInput.Location = new System.Drawing.Point(0, 0);
+            this.panelInput.Name = "panelInput";
+            this.panelInput.Size = new System.Drawing.Size(380, 265);
+            this.panelInput.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(1, 26);
+            this.label3.Location = new System.Drawing.Point(0, 26);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(220, 30);
             this.label3.TabIndex = 1;
@@ -446,6 +446,7 @@ namespace WindowsFormElectronics
             // 
             // panel7
             // 
+            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel7.Controls.Add(this.label10);
             this.panel7.Controls.Add(this.label11);
@@ -479,7 +480,7 @@ namespace WindowsFormElectronics
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(220, 30);
             this.label11.TabIndex = 9;
-            this.label11.Text = "Np:";
+            this.label11.Text = "Np/Nn:";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // richTextBox8
@@ -531,7 +532,7 @@ namespace WindowsFormElectronics
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(220, 30);
             this.label12.TabIndex = 4;
-            this.label12.Text = "Pp:";
+            this.label12.Text = "Pp/Pn:";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label13
@@ -617,7 +618,7 @@ namespace WindowsFormElectronics
             this.panel6.ResumeLayout(false);
             this.panelMaterial.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.panelInput.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -645,7 +646,7 @@ namespace WindowsFormElectronics
         private System.Windows.Forms.Button buttonGaAs;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelInput;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RichTextBox richTextBox2;
