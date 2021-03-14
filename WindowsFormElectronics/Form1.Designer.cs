@@ -35,32 +35,34 @@ namespace WindowsFormElectronics
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panelRight = new System.Windows.Forms.Panel();
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panelMaterial = new System.Windows.Forms.Panel();
-            this.buttonSi = new System.Windows.Forms.Button();
-            this.buttonGe = new System.Windows.Forms.Button();
-            this.buttonGaAs = new System.Windows.Forms.Button();
-            this.buttonInP = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panelInput = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.panelMaterial = new System.Windows.Forms.Panel();
+            this.buttonInP = new System.Windows.Forms.Button();
+            this.buttonGaAs = new System.Windows.Forms.Button();
+            this.buttonGe = new System.Windows.Forms.Button();
+            this.buttonSi = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelRight = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panelRightTop = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -72,17 +74,16 @@ namespace WindowsFormElectronics
             this.richTextBox11 = new System.Windows.Forms.RichTextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.richTextBox12 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panelRight.SuspendLayout();
             this.panelLeft.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panelMaterial.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelInput.SuspendLayout();
+            this.panelMaterial.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panelRight.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,13 +110,13 @@ namespace WindowsFormElectronics
             // сохранитьКакToolStripMenuItem
             // 
             this.сохранитьКакToolStripMenuItem.Name = "сохранитьКакToolStripMenuItem";
-            this.сохранитьКакToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.сохранитьКакToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.сохранитьКакToolStripMenuItem.Text = "сохранить как";
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.выходToolStripMenuItem.Text = "выход";
             // 
             // справкаToolStripMenuItem
@@ -135,26 +136,6 @@ namespace WindowsFormElectronics
             this.panel3.Size = new System.Drawing.Size(784, 437);
             this.panel3.TabIndex = 3;
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.button1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 350);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(784, 87);
-            this.panel4.TabIndex = 3;
-            // 
-            // panelRight
-            // 
-            this.panelRight.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panelRight.Controls.Add(this.panel7);
-            this.panelRight.Controls.Add(this.panel6);
-            this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelRight.Location = new System.Drawing.Point(384, 0);
-            this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(400, 350);
-            this.panelRight.TabIndex = 4;
-            // 
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -167,114 +148,6 @@ namespace WindowsFormElectronics
             this.panelLeft.Size = new System.Drawing.Size(380, 350);
             this.panelLeft.TabIndex = 5;
             // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.label1);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(380, 30);
-            this.panel5.TabIndex = 0;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label2);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(400, 30);
-            this.panel6.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(380, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Исходные данные";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(400, 30);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Результат";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panelMaterial
-            // 
-            this.panelMaterial.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panelMaterial.Controls.Add(this.buttonInP);
-            this.panelMaterial.Controls.Add(this.buttonGaAs);
-            this.panelMaterial.Controls.Add(this.buttonGe);
-            this.panelMaterial.Controls.Add(this.buttonSi);
-            this.panelMaterial.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMaterial.Location = new System.Drawing.Point(0, 30);
-            this.panelMaterial.Name = "panelMaterial";
-            this.panelMaterial.Size = new System.Drawing.Size(380, 55);
-            this.panelMaterial.TabIndex = 1;
-            // 
-            // buttonSi
-            // 
-            this.buttonSi.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonSi.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.buttonSi.FlatAppearance.BorderSize = 5;
-            this.buttonSi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSi.Location = new System.Drawing.Point(12, 7);
-            this.buttonSi.Name = "buttonSi";
-            this.buttonSi.Size = new System.Drawing.Size(90, 45);
-            this.buttonSi.TabIndex = 0;
-            this.buttonSi.Text = "Si";
-            this.buttonSi.UseVisualStyleBackColor = false;
-            // 
-            // buttonGe
-            // 
-            this.buttonGe.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonGe.FlatAppearance.BorderSize = 0;
-            this.buttonGe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonGe.Location = new System.Drawing.Point(202, 4);
-            this.buttonGe.Name = "buttonGe";
-            this.buttonGe.Size = new System.Drawing.Size(52, 45);
-            this.buttonGe.TabIndex = 1;
-            this.buttonGe.Text = "Ge";
-            this.buttonGe.UseVisualStyleBackColor = false;
-            // 
-            // buttonGaAs
-            // 
-            this.buttonGaAs.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonGaAs.FlatAppearance.BorderSize = 0;
-            this.buttonGaAs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGaAs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonGaAs.Location = new System.Drawing.Point(267, 3);
-            this.buttonGaAs.Name = "buttonGaAs";
-            this.buttonGaAs.Size = new System.Drawing.Size(59, 48);
-            this.buttonGaAs.TabIndex = 2;
-            this.buttonGaAs.Text = "GaAs";
-            this.buttonGaAs.UseVisualStyleBackColor = false;
-            // 
-            // buttonInP
-            // 
-            this.buttonInP.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonInP.FlatAppearance.BorderSize = 0;
-            this.buttonInP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInP.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonInP.Location = new System.Drawing.Point(332, 4);
-            this.buttonInP.Name = "buttonInP";
-            this.buttonInP.Size = new System.Drawing.Size(45, 45);
-            this.buttonInP.TabIndex = 3;
-            this.buttonInP.Text = "InP";
-            this.buttonInP.UseVisualStyleBackColor = false;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -284,19 +157,6 @@ namespace WindowsFormElectronics
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(380, 265);
             this.panel1.TabIndex = 2;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox1.Location = new System.Drawing.Point(230, 25);
-            this.richTextBox1.MaxLength = 100;
-            this.richTextBox1.Multiline = false;
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox1.Size = new System.Drawing.Size(150, 30);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "0";
             // 
             // panelInput
             // 
@@ -319,87 +179,35 @@ namespace WindowsFormElectronics
             this.panelInput.Size = new System.Drawing.Size(380, 265);
             this.panelInput.TabIndex = 1;
             // 
-            // label3
+            // label8
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(0, 26);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(220, 30);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Концентрация примеси Na:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(1, 206);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(220, 30);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Длина Lz:";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // richTextBox2
+            // label7
             // 
-            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox2.Location = new System.Drawing.Point(222, 62);
-            this.richTextBox2.MaxLength = 100;
-            this.richTextBox2.Multiline = false;
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox2.Size = new System.Drawing.Size(152, 30);
-            this.richTextBox2.TabIndex = 2;
-            this.richTextBox2.Text = "0";
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(1, 170);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(220, 30);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Длина Ly:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label4
+            // label6
             // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(1, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(220, 30);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Концентрация примеси Nd:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(1, 98);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(220, 30);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Температура T:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // richTextBox3
-            // 
-            this.richTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox3.Location = new System.Drawing.Point(222, 98);
-            this.richTextBox3.MaxLength = 100;
-            this.richTextBox3.Multiline = false;
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.richTextBox3.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox3.Size = new System.Drawing.Size(152, 30);
-            this.richTextBox3.TabIndex = 5;
-            this.richTextBox3.Text = "0";
-            // 
-            // richTextBox4
-            // 
-            this.richTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox4.Location = new System.Drawing.Point(222, 134);
-            this.richTextBox4.MaxLength = 100;
-            this.richTextBox4.Multiline = false;
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.richTextBox4.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox4.Size = new System.Drawing.Size(152, 30);
-            this.richTextBox4.TabIndex = 6;
-            this.richTextBox4.Text = "0";
-            // 
-            // richTextBox5
-            // 
-            this.richTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox5.Location = new System.Drawing.Point(222, 170);
-            this.richTextBox5.MaxLength = 100;
-            this.richTextBox5.Multiline = false;
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.richTextBox5.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox5.Size = new System.Drawing.Size(152, 30);
-            this.richTextBox5.TabIndex = 7;
-            this.richTextBox5.Text = "0";
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(1, 134);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(220, 30);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Длина Lx:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // richTextBox6
             // 
@@ -412,41 +220,253 @@ namespace WindowsFormElectronics
             this.richTextBox6.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.richTextBox6.Size = new System.Drawing.Size(152, 30);
             this.richTextBox6.TabIndex = 8;
-            this.richTextBox6.Text = "0";
+            this.richTextBox6.Text = "5";
             // 
-            // label6
+            // richTextBox5
             // 
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(1, 134);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(220, 30);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Длина Lx:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.richTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox5.Location = new System.Drawing.Point(222, 170);
+            this.richTextBox5.MaxLength = 100;
+            this.richTextBox5.Multiline = false;
+            this.richTextBox5.Name = "richTextBox5";
+            this.richTextBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.richTextBox5.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.richTextBox5.Size = new System.Drawing.Size(152, 30);
+            this.richTextBox5.TabIndex = 7;
+            this.richTextBox5.Text = "4";
             // 
-            // label7
+            // richTextBox4
             // 
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(1, 170);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(220, 30);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Длина Ly:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.richTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox4.Location = new System.Drawing.Point(222, 134);
+            this.richTextBox4.MaxLength = 100;
+            this.richTextBox4.Multiline = false;
+            this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.richTextBox4.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.richTextBox4.Size = new System.Drawing.Size(152, 30);
+            this.richTextBox4.TabIndex = 6;
+            this.richTextBox4.Text = "3";
             // 
-            // label8
+            // richTextBox3
             // 
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(1, 206);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(220, 30);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Длина Lz:";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.richTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox3.Location = new System.Drawing.Point(222, 98);
+            this.richTextBox3.MaxLength = 100;
+            this.richTextBox3.Multiline = false;
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.richTextBox3.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.richTextBox3.Size = new System.Drawing.Size(152, 30);
+            this.richTextBox3.TabIndex = 5;
+            this.richTextBox3.Text = "2";
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(1, 98);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(220, 30);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Температура T:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(1, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(220, 30);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Концентрация примеси Nd:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox2.Location = new System.Drawing.Point(222, 62);
+            this.richTextBox2.MaxLength = 100;
+            this.richTextBox2.Multiline = false;
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.richTextBox2.Size = new System.Drawing.Size(152, 30);
+            this.richTextBox2.TabIndex = 2;
+            this.richTextBox2.Text = "1";
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(0, 26);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(220, 30);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Концентрация примеси Na:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox1.Location = new System.Drawing.Point(230, 25);
+            this.richTextBox1.MaxLength = 100;
+            this.richTextBox1.Multiline = false;
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.richTextBox1.Size = new System.Drawing.Size(150, 30);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "0";
+            // 
+            // panelMaterial
+            // 
+            this.panelMaterial.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelMaterial.Controls.Add(this.buttonInP);
+            this.panelMaterial.Controls.Add(this.buttonGaAs);
+            this.panelMaterial.Controls.Add(this.buttonGe);
+            this.panelMaterial.Controls.Add(this.buttonSi);
+            this.panelMaterial.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMaterial.Location = new System.Drawing.Point(0, 30);
+            this.panelMaterial.Name = "panelMaterial";
+            this.panelMaterial.Size = new System.Drawing.Size(380, 55);
+            this.panelMaterial.TabIndex = 1;
+            // 
+            // buttonInP
+            // 
+            this.buttonInP.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonInP.FlatAppearance.BorderSize = 0;
+            this.buttonInP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonInP.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonInP.Location = new System.Drawing.Point(332, 4);
+            this.buttonInP.Name = "buttonInP";
+            this.buttonInP.Size = new System.Drawing.Size(45, 45);
+            this.buttonInP.TabIndex = 3;
+            this.buttonInP.Text = "InP";
+            this.buttonInP.UseVisualStyleBackColor = false;
+            // 
+            // buttonGaAs
+            // 
+            this.buttonGaAs.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonGaAs.FlatAppearance.BorderSize = 0;
+            this.buttonGaAs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGaAs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonGaAs.Location = new System.Drawing.Point(267, 3);
+            this.buttonGaAs.Name = "buttonGaAs";
+            this.buttonGaAs.Size = new System.Drawing.Size(59, 48);
+            this.buttonGaAs.TabIndex = 2;
+            this.buttonGaAs.Text = "GaAs";
+            this.buttonGaAs.UseVisualStyleBackColor = false;
+            // 
+            // buttonGe
+            // 
+            this.buttonGe.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonGe.FlatAppearance.BorderSize = 0;
+            this.buttonGe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonGe.Location = new System.Drawing.Point(202, 4);
+            this.buttonGe.Name = "buttonGe";
+            this.buttonGe.Size = new System.Drawing.Size(52, 45);
+            this.buttonGe.TabIndex = 1;
+            this.buttonGe.Text = "Ge";
+            this.buttonGe.UseVisualStyleBackColor = false;
+            // 
+            // buttonSi
+            // 
+            this.buttonSi.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonSi.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonSi.FlatAppearance.BorderSize = 5;
+            this.buttonSi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSi.Location = new System.Drawing.Point(12, 7);
+            this.buttonSi.Name = "buttonSi";
+            this.buttonSi.Size = new System.Drawing.Size(90, 45);
+            this.buttonSi.TabIndex = 0;
+            this.buttonSi.Text = "Si";
+            this.buttonSi.UseVisualStyleBackColor = false;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(380, 30);
+            this.panel5.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(380, 30);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Исходные данные";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelRight
+            // 
+            this.panelRight.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelRight.Controls.Add(this.panel7);
+            this.panelRight.Controls.Add(this.panelRightTop);
+            this.panelRight.Controls.Add(this.panel6);
+            this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelRight.Location = new System.Drawing.Point(384, 0);
+            this.panelRight.Name = "panelRight";
+            this.panelRight.Size = new System.Drawing.Size(400, 350);
+            this.panelRight.TabIndex = 4;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.label2);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(400, 30);
+            this.panel6.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(400, 30);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Результат";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.button1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 350);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(784, 87);
+            this.panel4.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(784, 40);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Произвести расчёт";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // panelRightTop
+            // 
+            this.panelRightTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelRightTop.Location = new System.Drawing.Point(0, 30);
+            this.panelRightTop.Name = "panelRightTop";
+            this.panelRightTop.Size = new System.Drawing.Size(400, 55);
+            this.panelRightTop.TabIndex = 13;
             // 
             // panel7
             // 
-            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel7.Controls.Add(this.label10);
             this.panel7.Controls.Add(this.label11);
@@ -458,10 +478,11 @@ namespace WindowsFormElectronics
             this.panel7.Controls.Add(this.richTextBox11);
             this.panel7.Controls.Add(this.label14);
             this.panel7.Controls.Add(this.richTextBox12);
-            this.panel7.Location = new System.Drawing.Point(5, 85);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel7.Location = new System.Drawing.Point(0, 85);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(380, 250);
-            this.panel7.TabIndex = 12;
+            this.panel7.Size = new System.Drawing.Size(400, 265);
+            this.panel7.TabIndex = 15;
             // 
             // label10
             // 
@@ -495,7 +516,7 @@ namespace WindowsFormElectronics
             this.richTextBox8.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.richTextBox8.Size = new System.Drawing.Size(152, 30);
             this.richTextBox8.TabIndex = 7;
-            this.richTextBox8.Text = "0";
+            this.richTextBox8.Text = "4";
             // 
             // richTextBox9
             // 
@@ -509,7 +530,7 @@ namespace WindowsFormElectronics
             this.richTextBox9.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.richTextBox9.Size = new System.Drawing.Size(152, 30);
             this.richTextBox9.TabIndex = 6;
-            this.richTextBox9.Text = "0";
+            this.richTextBox9.Text = "3";
             // 
             // richTextBox10
             // 
@@ -523,7 +544,7 @@ namespace WindowsFormElectronics
             this.richTextBox10.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.richTextBox10.Size = new System.Drawing.Size(152, 30);
             this.richTextBox10.TabIndex = 5;
-            this.richTextBox10.Text = "0";
+            this.richTextBox10.Text = "2";
             // 
             // label12
             // 
@@ -557,7 +578,7 @@ namespace WindowsFormElectronics
             this.richTextBox11.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.richTextBox11.Size = new System.Drawing.Size(152, 30);
             this.richTextBox11.TabIndex = 2;
-            this.richTextBox11.Text = "0";
+            this.richTextBox11.Text = "1";
             // 
             // label14
             // 
@@ -583,17 +604,6 @@ namespace WindowsFormElectronics
             this.richTextBox12.TabIndex = 0;
             this.richTextBox12.Text = "0";
             // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(784, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Произвести расчёт";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -611,14 +621,14 @@ namespace WindowsFormElectronics
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panelRight.ResumeLayout(false);
             this.panelLeft.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panelMaterial.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panelInput.ResumeLayout(false);
+            this.panelMaterial.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panelRight.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -658,6 +668,7 @@ namespace WindowsFormElectronics
         private System.Windows.Forms.RichTextBox richTextBox4;
         private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
@@ -669,7 +680,7 @@ namespace WindowsFormElectronics
         private System.Windows.Forms.RichTextBox richTextBox11;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.RichTextBox richTextBox12;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panelRightTop;
     }
 }
 

@@ -29,7 +29,9 @@ namespace WindowsFormElectronics
             panelRight.Size = new Size(this.Size.Width/2, panelRight.Size.Height);
 
             panelMaterial.Size = new Size(panelMaterial.Size.Width, (int)((panelLeft.Size.Height + panelMaterial.Size.Height)*0.13f));
-            
+            panelRightTop.Size = panelMaterial.Size;
+
+
             int width = (int)(panelMaterial.Size.Width/4) - 8;
             int height = (int)(panelMaterial.Size.Height) - 10;
             buttonSi.Width = width;
@@ -117,7 +119,45 @@ namespace WindowsFormElectronics
             label8.Font = label3.Font;
             label8.Location = new Point(0, height * 5 + 35);
 
+            richTextBox12.Size = richTextBox1.Size;
+            richTextBox12.Location = richTextBox1.Location;
+            richTextBox12.Font = richTextBox1.Font;
 
+            label14.Size = label3.Size;
+            label14.Location = label3.Location;
+            label14.Font = label3.Font;
+
+            richTextBox11.Size = richTextBox1.Size;
+            richTextBox11.Location = richTextBox2.Location;
+            richTextBox11.Font = richTextBox2.Font;
+
+            label13.Size = label4.Size;
+            label13.Location = label4.Location;
+            label13.Font = label4.Font;
+
+            richTextBox10.Size = richTextBox1.Size;
+            richTextBox10.Location = richTextBox3.Location;
+            richTextBox10.Font = richTextBox3.Font;
+
+            label12.Size = label5.Size;
+            label12.Location = label5.Location;
+            label12.Font = label5.Font;
+
+            richTextBox9.Size = richTextBox1.Size;
+            richTextBox9.Location = richTextBox4.Location;
+            richTextBox9.Font = richTextBox3.Font;
+
+            label11.Size = label5.Size;
+            label11.Location = label6.Location;
+            label11.Font = label5.Font;
+
+            richTextBox8.Size = richTextBox1.Size;
+            richTextBox8.Location = richTextBox5.Location;
+            richTextBox8.Font = richTextBox3.Font;
+
+            label10.Size = label5.Size;
+            label10.Location = label7.Location;
+            label10.Font = label5.Font;
 
         }
     }
