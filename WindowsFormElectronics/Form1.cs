@@ -17,10 +17,32 @@ namespace WindowsFormElectronics
             InitializeComponent();
             Form1_Resize(null,null);
         }
-     
-        private void ChangeSizeTextBox(RichTextBox box,int indent)
-        {
 
+        enum IndexMaterial //Индексация материалов (Чтобы знать под каким номером какой материал)
+        {
+            Si = 0,
+            Ge = 1,
+            GaAs = 2,
+            InP = 3
+        }
+        public int currentMaterial = 0; //Индекс текущего материала
+
+        //Метод обработки нажатия на кнопки с материалом
+        private void ChoiceMaterial(object obj, EventArgs e)
+        {
+            buttonSi.FlatAppearance.BorderSize = 0;
+            buttonGe.FlatAppearance.BorderSize = 0;
+            buttonGaAs.FlatAppearance.BorderSize = 0;
+            buttonInP.FlatAppearance.BorderSize = 0;
+
+            ((Button)obj).FlatAppearance.BorderSize = 5;
+            currentMaterial = ((Button)obj).TabIndex;
+        }
+
+        //Метод обработки нажатия кнопки "Выполнить расчет"
+        private void button_Calculation(object obj,EventArgs e)
+        {
+            //TODO
         }
         //Обработчик изменения размера формы
         private void Form1_Resize(object sender, EventArgs e)
@@ -160,5 +182,7 @@ namespace WindowsFormElectronics
             label10.Font = label5.Font;
 
         }
+
+        
     }
 }

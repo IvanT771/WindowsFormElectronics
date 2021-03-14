@@ -58,11 +58,6 @@ namespace WindowsFormElectronics
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelRight = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panelRightTop = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -74,6 +69,11 @@ namespace WindowsFormElectronics
             this.richTextBox11 = new System.Windows.Forms.RichTextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.richTextBox12 = new System.Windows.Forms.RichTextBox();
+            this.panelRightTop = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelLeft.SuspendLayout();
@@ -82,9 +82,9 @@ namespace WindowsFormElectronics
             this.panelMaterial.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panelRight.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -333,6 +333,7 @@ namespace WindowsFormElectronics
             // buttonInP
             // 
             this.buttonInP.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonInP.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
             this.buttonInP.FlatAppearance.BorderSize = 0;
             this.buttonInP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInP.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -342,10 +343,12 @@ namespace WindowsFormElectronics
             this.buttonInP.TabIndex = 3;
             this.buttonInP.Text = "InP";
             this.buttonInP.UseVisualStyleBackColor = false;
+            this.buttonInP.Click += new System.EventHandler(this.ChoiceMaterial);
             // 
             // buttonGaAs
             // 
             this.buttonGaAs.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonGaAs.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
             this.buttonGaAs.FlatAppearance.BorderSize = 0;
             this.buttonGaAs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonGaAs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -355,10 +358,12 @@ namespace WindowsFormElectronics
             this.buttonGaAs.TabIndex = 2;
             this.buttonGaAs.Text = "GaAs";
             this.buttonGaAs.UseVisualStyleBackColor = false;
+            this.buttonGaAs.Click += new System.EventHandler(this.ChoiceMaterial);
             // 
             // buttonGe
             // 
             this.buttonGe.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonGe.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
             this.buttonGe.FlatAppearance.BorderSize = 0;
             this.buttonGe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonGe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -368,11 +373,12 @@ namespace WindowsFormElectronics
             this.buttonGe.TabIndex = 1;
             this.buttonGe.Text = "Ge";
             this.buttonGe.UseVisualStyleBackColor = false;
+            this.buttonGe.Click += new System.EventHandler(this.ChoiceMaterial);
             // 
             // buttonSi
             // 
             this.buttonSi.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonSi.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonSi.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
             this.buttonSi.FlatAppearance.BorderSize = 5;
             this.buttonSi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -382,6 +388,7 @@ namespace WindowsFormElectronics
             this.buttonSi.TabIndex = 0;
             this.buttonSi.Text = "Si";
             this.buttonSi.UseVisualStyleBackColor = false;
+            this.buttonSi.Click += new System.EventHandler(this.ChoiceMaterial);
             // 
             // panel5
             // 
@@ -415,55 +422,6 @@ namespace WindowsFormElectronics
             this.panelRight.Name = "panelRight";
             this.panelRight.Size = new System.Drawing.Size(400, 350);
             this.panelRight.TabIndex = 4;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label2);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(400, 30);
-            this.panel6.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(400, 30);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Результат";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.button1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 350);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(784, 87);
-            this.panel4.TabIndex = 3;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(784, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Произвести расчёт";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // panelRightTop
-            // 
-            this.panelRightTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelRightTop.Location = new System.Drawing.Point(0, 30);
-            this.panelRightTop.Name = "panelRightTop";
-            this.panelRightTop.Size = new System.Drawing.Size(400, 55);
-            this.panelRightTop.TabIndex = 13;
             // 
             // panel7
             // 
@@ -604,6 +562,56 @@ namespace WindowsFormElectronics
             this.richTextBox12.TabIndex = 0;
             this.richTextBox12.Text = "0";
             // 
+            // panelRightTop
+            // 
+            this.panelRightTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelRightTop.Location = new System.Drawing.Point(0, 30);
+            this.panelRightTop.Name = "panelRightTop";
+            this.panelRightTop.Size = new System.Drawing.Size(400, 55);
+            this.panelRightTop.TabIndex = 13;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.label2);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(400, 30);
+            this.panel6.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(400, 30);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Результат";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.button1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 350);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(784, 87);
+            this.panel4.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(784, 40);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Произвести расчёт";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button_Calculation);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -627,9 +635,9 @@ namespace WindowsFormElectronics
             this.panelMaterial.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panelRight.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
