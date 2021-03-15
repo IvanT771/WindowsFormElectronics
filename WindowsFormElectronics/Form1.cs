@@ -183,6 +183,64 @@ namespace WindowsFormElectronics
 
         }
 
-        
+        //Обработчик заполнения полей textBox 
+        private void richTextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(!(e.KeyChar >= '0' && e.KeyChar <= '9'))
+            {
+                if(e.KeyChar == ',' || e.KeyChar == '.' || e.KeyChar == 'б' || e.KeyChar == 'ю' || e.KeyChar == '/')
+                {
+                    if(((RichTextBox)sender).Text.IndexOf(',') == -1 && ((RichTextBox)sender).Text.Length > 0 && ((RichTextBox)sender).Text.IndexOf('E') == -1)
+                    {
+                        e.KeyChar = ',';
+                        e.Handled = false;
+                        return;
+                    }
+                }
+                if(e.KeyChar == 'E' || e.KeyChar == 'e' || e.KeyChar == 'у' || e.KeyChar == 'У')
+                {
+                    if(((RichTextBox)sender).Text.IndexOf('E') == -1 )
+                    {
+                        e.KeyChar = 'E';
+                        e.Handled = false;
+                        return;
+                    }
+                }
+                if(e.KeyChar == '-')
+                {
+                    if (((RichTextBox)sender).Text.Length > 0)
+                    {
+                        if(((RichTextBox)sender).Text[((RichTextBox)sender).Text.Length-1] == 'E')
+                        {
+                            e.Handled = false;
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        e.Handled = false;
+                        return;
+                    }
+                }
+                e.Handled = true;
+            }
+        }
+
+        //Кнопка сброса
+        private void button2_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Clear();
+            richTextBox2.Clear();
+            richTextBox3.Clear();
+            richTextBox4.Clear();
+            richTextBox5.Clear();
+            richTextBox6.Clear();
+            richTextBox12.Clear();
+            richTextBox8.Clear();
+            richTextBox9.Clear();
+            richTextBox10.Clear();
+            richTextBox11.Clear();
+
+        }
     }
 }
