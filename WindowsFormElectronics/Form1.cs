@@ -16,7 +16,14 @@ namespace WindowsFormElectronics
         {
             InitializeComponent();
             Form1_Resize(null,null);
+
+            //Инициализация табличных данных
+            for (int i = 0; i < COUNT; i++)
+                MatArray[i] = new Material(i);
+            MatArray[0].ShowData();
         }
+
+        const int COUNT = 4; //Количество материалов
 
         enum IndexMaterial //Индексация материалов (Чтобы знать под каким номером какой материал)
         {
@@ -25,7 +32,8 @@ namespace WindowsFormElectronics
             GaAs = 2,
             InP = 3
         }
-        public int currentMaterial = 0; //Индекс текущего материала
+        int currentMaterial = 0; //Индекс текущего материала
+        Material[] MatArray = new Material[4];
 
         //Метод обработки нажатия на кнопки с материалом
         private void ChoiceMaterial(object obj, EventArgs e)
@@ -42,7 +50,13 @@ namespace WindowsFormElectronics
         //Метод обработки нажатия кнопки "Выполнить расчет"
         private void button_Calculation(object obj,EventArgs e)
         {
-            //TODO
+            double Na = Double.Parse(richTextBox1.Text);
+            double Nd = Double.Parse(richTextBox2.Text);
+            double T = Double.Parse(richTextBox3.Text);
+            MatArray[currentMaterial].SetInputData(Na, Nd, T);
+            MatArray[currentMaterial].CalculateNi();
+            MatArray[currentMaterial].ShowData();
+            richTextBox11.Text = MatArray[currentMaterial].GetNi();
         }
         //Обработчик изменения размера формы
         private void Form1_Resize(object sender, EventArgs e)

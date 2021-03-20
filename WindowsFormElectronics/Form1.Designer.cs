@@ -73,8 +73,8 @@ namespace WindowsFormElectronics
             this.panel6 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelLeft.SuspendLayout();
@@ -613,18 +613,6 @@ namespace WindowsFormElectronics
             this.panel4.Size = new System.Drawing.Size(784, 87);
             this.panel4.TabIndex = 3;
             // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(20, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(744, 43);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Произвести расчёт";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button_Calculation);
-            // 
             // button2
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -636,6 +624,18 @@ namespace WindowsFormElectronics
             this.button2.Text = "Сбросить";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(20, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(744, 43);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Произвести расчёт";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button_Calculation);
             // 
             // Form1
             // 
@@ -649,7 +649,7 @@ namespace WindowsFormElectronics
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Лабораторный практикум";
+            this.Text = " ";
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
