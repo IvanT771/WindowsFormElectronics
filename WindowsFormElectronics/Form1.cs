@@ -35,6 +35,7 @@ namespace WindowsFormElectronics
         int currentMaterial = 0; //Индекс текущего материала
         Material[] MatArray = new Material[4];
 
+
         private bool isDonor = false; //Тип примеси
 
         //Метод обработки нажатия на кнопки с материалом
@@ -66,15 +67,15 @@ namespace WindowsFormElectronics
         {
             if (!isProtect()) { return;}
 
-            double N = 0;//Концентрация
-            double T = 0;//Температура
+            double N = 0;   //Концентрация
+            double T = 0;   //Температура
 
-            double Lx = 0;//Длина
-            double Ly = 0;
-            double Lz = 0;
+            double Lx = 0;  //Длина x
+            double Ly = 0;  //Длина y
+            double Lz = 0;  //Длина z
 
-            
-            if(!(
+
+            if (!(
                 Double.TryParse(richTextBox2.Text, out N) &&
                 Double.TryParse(richTextBox3.Text, out T) &&
                 Double.TryParse(richTextBox4.Text, out Lx) &&
@@ -89,8 +90,16 @@ namespace WindowsFormElectronics
 
             //Сами расчеты ->
 
+            double ni = 0;      //Концентрация собственных носителей полупроводника
+            double G = 0;       //Проводимость полупроводника
 
-        }
+            //ni = 
+            //G = 
+
+            //Вывод данных 
+            richTextBox12.Text = G.ToString("E");
+            richTextBox11.Text = ni.ToString("E");
+    }
         private void Form1_Resize2(object sender, EventArgs e)
         {
             panelLeft.Size = new Size(this.Size.Width / 2 - 20, panelLeft.Size.Height);
