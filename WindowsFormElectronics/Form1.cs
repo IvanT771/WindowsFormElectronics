@@ -83,7 +83,7 @@ namespace WindowsFormElectronics
                 Double.TryParse(richTextBox6.Text, out Lz)
                 )) 
                 {
-                MessageBox.Show("Данные введены не корректно!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Данные введены некорректно!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
