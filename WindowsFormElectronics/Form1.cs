@@ -49,17 +49,47 @@ namespace WindowsFormElectronics
             currentMaterial = ((Button)obj).TabIndex;
         }
 
+        //Метод защиты ввода 
+        private bool isProtect()
+        {
+            if(richTextBox2.Text.Length <=0 || richTextBox3.Text.Length <= 0
+               || richTextBox4.Text.Length <= 0 || richTextBox5.Text.Length <= 0 || richTextBox6.Text.Length <= 0)
+            {
+                MessageBox.Show("Поля ввода не должны быть путыми!", "Ошибка", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                return false;
+            }
+                return true;
+        }
+
         //Метод обработки нажатия кнопки "Выполнить расчет"
         private void button_Calculation(object obj,EventArgs e)
         {
-            double N = Double.Parse(richTextBox2.Text); //Концентрация
-            Console.WriteLine("Концентрация = "+N.ToString());
+            if (!isProtect()) { return;}
 
-         //   double T = Double.Parse(richTextBox3.Text);
-         //   MatArray[currentMaterial].SetInputData(Na, Nd, T);
-           // MatArray[currentMaterial].CalculateNi();
-           // MatArray[currentMaterial].ShowData();
-           // richTextBox11.Text = MatArray[currentMaterial].GetNi();
+            double N = 0;//Концентрация
+            double T = 0;//Температура
+
+            double Lx = 0;//Длина
+            double Ly = 0;
+            double Lz = 0;
+
+            
+            if(!(
+                Double.TryParse(richTextBox2.Text, out N) &&
+                Double.TryParse(richTextBox3.Text, out T) &&
+                Double.TryParse(richTextBox4.Text, out Lx) &&
+                Double.TryParse(richTextBox5.Text, out Ly) &&
+                Double.TryParse(richTextBox6.Text, out Lz)
+                )) 
+                {
+                MessageBox.Show("Данные введены не корректно!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+
+            //Сами расчеты ->
+
+
         }
         private void Form1_Resize2(object sender, EventArgs e)
         {
@@ -250,7 +280,7 @@ namespace WindowsFormElectronics
                 }
                 if(e.KeyChar == 'E' || e.KeyChar == 'e' || e.KeyChar == 'у' || e.KeyChar == 'У')
                 {
-                    if(((RichTextBox)sender).Text.IndexOf('E') == -1 )
+                    if(((RichTextBox)sender).Text.IndexOf('E') == -1 && ((RichTextBox)sender).Text.Length > 0)
                     {
                         e.KeyChar = 'E';
                         e.Handled = false;
@@ -280,7 +310,7 @@ namespace WindowsFormElectronics
         //Кнопка сброса
         private void button2_Click(object sender, EventArgs e)
         {
-           // richTextBox1.Clear();
+           
             richTextBox2.Clear();
             richTextBox3.Clear();
             richTextBox4.Clear();
