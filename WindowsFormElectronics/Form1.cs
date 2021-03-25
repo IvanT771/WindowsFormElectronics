@@ -92,14 +92,17 @@ namespace WindowsFormElectronics
 
             double ni = 0;      //Концентрация собственных носителей полупроводника
             double G = 0;       //Проводимость полупроводника
+            double R = 0;       //Сопротивление
 
             //ni = 
-            //G = 
+            //G =
+            //R = 
 
             //Вывод данных 
             richTextBox12.Text = G.ToString("E");
             richTextBox11.Text = ni.ToString("E");
-    }
+            richTextBox8.Text = R.ToString("E");
+        }
         private void Form1_Resize2(object sender, EventArgs e)
         {
             panelLeft.Size = new Size(this.Size.Width / 2 - 20, panelLeft.Size.Height);
