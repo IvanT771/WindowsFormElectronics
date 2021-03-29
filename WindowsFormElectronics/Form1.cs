@@ -87,20 +87,28 @@ namespace WindowsFormElectronics
                 return;
             }
 
-
+            MatArray[currentMaterial].SetInputData(isDonor, N, T, Lx, Ly, Lz);
             //Сами расчеты ->
+            MatArray[currentMaterial].CalculateNi();
+            MatArray[currentMaterial].CalculateG();
 
-            double ni = 0;      //Концентрация собственных носителей полупроводника
+            double ni = 0;      //Концентрация собственного полупроводника
+            double major = 0;      //Основные носители
+            double minor = 0;      //Неосновные носители
             double G = 0;       //Проводимость полупроводника
             double R = 0;       //Сопротивление
 
-            //ni = 
-            //G =
-            //R = 
+            ni = MatArray[currentMaterial].GetNi();
+            G = MatArray[currentMaterial].GetG();
+            major = MatArray[currentMaterial].GetMajor();
+            minor = MatArray[currentMaterial].GetMinor();
+            R = MatArray[currentMaterial].GetR();
 
-            //Вывод данных 
+            //Вывод данных
             richTextBox12.Text = G.ToString("E");
             richTextBox11.Text = ni.ToString("E");
+            richTextBox9.Text = major.ToString("E");
+            richTextBox10.Text = minor.ToString("E");
             richTextBox8.Text = R.ToString("E");
         }
         private void Form1_Resize2(object sender, EventArgs e)
@@ -351,8 +359,8 @@ namespace WindowsFormElectronics
             {
                 // N - тип
                 label4.Text = "Концентрация примеси Nd:";
-                label12.Text = "Pn:";
-                label11.Text = "Nn:";
+                label12.Text = "Nn:";
+                label11.Text = "Pn:";
             }
             else
             {
