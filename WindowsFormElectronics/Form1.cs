@@ -15,7 +15,6 @@ namespace WindowsFormElectronics
         public Form1()
         {
             InitializeComponent();
-            Form1_Resize2(null,null);
 
             //Инициализация табличных данных
             for (int i = 0; i < COUNT; i++)
@@ -46,7 +45,7 @@ namespace WindowsFormElectronics
             buttonGaAs.FlatAppearance.BorderSize = 0;
             buttonInP.FlatAppearance.BorderSize = 0;
 
-            ((Button)obj).FlatAppearance.BorderSize = 5;
+            ((Button)obj).FlatAppearance.BorderSize = 3;
             currentMaterial = ((Button)obj).TabIndex;
         }
 
@@ -113,34 +112,34 @@ namespace WindowsFormElectronics
         }
         private void Form1_Resize2(object sender, EventArgs e)
         {
-            panelLeft.Size = new Size(this.Size.Width / 2 - 20, panelLeft.Size.Height);
-            panelRight.Size = new Size(this.Size.Width / 2, panelRight.Size.Height);
+          //  panelLeft.Size = new Size(this.Size.Width / 2 - 20, panelLeft.Size.Height);
+          //  panelRight.Size = new Size(this.Size.Width / 2, panelRight.Size.Height);
 
-            panelMaterial.Size = new Size(panelMaterial.Size.Width, (int)((panelLeft.Size.Height + panelMaterial.Size.Height) * 0.13f));
-            panelRightTop.Size = panelMaterial.Size;
+          ////  panelMaterial.Size = new Size(panelMaterial.Size.Width, (int)((panelLeft.Size.Height + panelMaterial.Size.Height) * 0.13f));
+          ////  panelRightTop.Size = panelMaterial.Size;
 
 
-            int width = (int)(panelMaterial.Size.Width / 4) - 8;
-            int height = (int)(panelMaterial.Size.Height) - 10;
-            buttonSi.Width = width;
-            buttonSi.Height = height;
-            buttonSi.Font = new Font(buttonSi.Font.FontFamily, width / 6, buttonSi.Font.Style);
-            buttonSi.Location = new Point(5, 5);
+          //  int width = (int)(panelMaterial.Size.Width / 4) - 8;
+          //  int height = (int)(panelMaterial.Size.Height) - 10;
+          //  buttonSi.Width = width;
+          //  buttonSi.Height = height;
+          //  buttonSi.Font = new Font(buttonSi.Font.FontFamily, width / 6, buttonSi.Font.Style);
+          //  buttonSi.Location = new Point(5, 5);
 
-            buttonGe.Width = width;
-            buttonGe.Height = height;
-            buttonGe.Font = buttonSi.Font;
-            buttonGe.Location = new Point(width + 10, 5);
+          //  buttonGe.Width = width;
+          //  buttonGe.Height = height;
+          //  buttonGe.Font = buttonSi.Font;
+          //  buttonGe.Location = new Point(width + 10, 5);
 
-            buttonGaAs.Width = width;
-            buttonGaAs.Height = height;
-            buttonGaAs.Font = buttonSi.Font;
-            buttonGaAs.Location = new Point(width * 2 + 15, 5);
+          //  buttonGaAs.Width = width;
+          //  buttonGaAs.Height = height;
+          //  buttonGaAs.Font = buttonSi.Font;
+          //  buttonGaAs.Location = new Point(width * 2 + 15, 5);
 
-            buttonInP.Width = width;
-            buttonInP.Height = height;
-            buttonInP.Font = buttonSi.Font;
-            buttonInP.Location = new Point(width * 3 + 20, 5);
+          //  buttonInP.Width = width;
+          //  buttonInP.Height = height;
+          //  buttonInP.Font = buttonSi.Font;
+          //  buttonInP.Location = new Point(width * 3 + 20, 5);
         }
         //Изменение размера формы (временно откл.)
         #region resizeForm
@@ -369,6 +368,11 @@ namespace WindowsFormElectronics
                 label12.Text = "Pp:";
                 label11.Text = "Np:";
             }
+
+        }
+
+        private void panelRight_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
