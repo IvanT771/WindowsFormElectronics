@@ -98,7 +98,7 @@ namespace WindowsFormElectronics
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(0, 24);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(930, 526);
+            this.panel3.Size = new System.Drawing.Size(910, 526);
             this.panel3.TabIndex = 3;
             // 
             // panelLeft
@@ -107,7 +107,7 @@ namespace WindowsFormElectronics
             this.panelLeft.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panelLeft.Controls.Add(this.panel1);
             this.panelLeft.Controls.Add(this.panel5);
-            this.panelLeft.Location = new System.Drawing.Point(23, 0);
+            this.panelLeft.Location = new System.Drawing.Point(13, 0);
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(390, 443);
             this.panelLeft.TabIndex = 5;
@@ -396,7 +396,7 @@ namespace WindowsFormElectronics
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(32)))));
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(0, 0);
@@ -412,7 +412,7 @@ namespace WindowsFormElectronics
             this.panelRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.panelRight.Controls.Add(this.panel7);
             this.panelRight.Controls.Add(this.panel6);
-            this.panelRight.Location = new System.Drawing.Point(481, 0);
+            this.panelRight.Location = new System.Drawing.Point(471, 0);
             this.panelRight.Name = "panelRight";
             this.panelRight.Size = new System.Drawing.Size(414, 443);
             this.panelRight.TabIndex = 4;
@@ -588,7 +588,7 @@ namespace WindowsFormElectronics
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(32)))));
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(0, 0);
@@ -606,7 +606,7 @@ namespace WindowsFormElectronics
             this.panel4.Location = new System.Drawing.Point(0, 443);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(20, 0, 20, 10);
-            this.panel4.Size = new System.Drawing.Size(930, 83);
+            this.panel4.Size = new System.Drawing.Size(910, 83);
             this.panel4.TabIndex = 3;
             // 
             // button2
@@ -615,7 +615,7 @@ namespace WindowsFormElectronics
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(44)))), ((int)(((byte)(59)))));
-            this.button2.Location = new System.Drawing.Point(481, 16);
+            this.button2.Location = new System.Drawing.Point(485, 14);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(390, 45);
             this.button2.TabIndex = 1;
@@ -629,7 +629,7 @@ namespace WindowsFormElectronics
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(108)))), ((int)(((byte)(233)))));
-            this.button1.Location = new System.Drawing.Point(23, 16);
+            this.button1.Location = new System.Drawing.Point(13, 14);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(390, 45);
             this.button1.TabIndex = 0;

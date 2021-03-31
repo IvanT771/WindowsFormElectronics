@@ -104,11 +104,11 @@ namespace WindowsFormElectronics
             R = MatArray[currentMaterial].GetR();
 
             //Вывод данных
-            richTextBox12.Text = G.ToString("E");
-            richTextBox11.Text = ni.ToString("E");
-            richTextBox9.Text = major.ToString("E");
-            richTextBox10.Text = minor.ToString("E");
-            richTextBox8.Text = R.ToString("E");
+            richTextBox12.Text = G.ToString("1.######E+0##");
+            richTextBox11.Text = ni.ToString("1.######E+0##");
+            richTextBox9.Text = major.ToString("1.######E+0##");
+            richTextBox10.Text = minor.ToString("1.######E+0##");
+            richTextBox8.Text = R.ToString("1.######E+0##");
         }
         private void Form1_Resize2(object sender, EventArgs e)
         {
