@@ -9,72 +9,62 @@ namespace WindowsFormElectronics
     class Material
     {
         //Константы
-        private const double k = 8.62E-5; // Постоянная Больцмана (эВ/К)  
+        private const double k = 8.617333262E-5; // Постоянная Больцмана (эВ/К)  
         private const double q = 1.6E-19; //Электрический заряд
         //Табличные данные
-        private double mun;     //Подвижность электронов
-        private double mup;     //Подвижность дырок
-        private double Nc;      //Эффективная плотность состояния в зоне проводимости
-        private double Nv;      //Эффективная плотность состояния в валентной зоне
         private double phiz;    //Ширина запрещенной зоны
+        private double eps;     //Температурная чувствительность
         private double mc;      //Эффективная масса электронов
         private double mv;      //Эффективная масса дырок
-        private double B;
-        //Входные данне
+        private double mun;     //Подвижность электронов
+        private double mup;     //Подвижность дырок
+        //Входные данные
         private bool isDonor;   //Тип примеси
         private double N;       //Концентрация примеси
         private double T;       //Температура
         private double Lx;      //Ширина
         private double Ly;      //Высота
         private double Lz;      //Длина
-        //Выходные данные
+        //Вычисляемые данные
         private double ni;      //Концентрация собственного полупроводника
-        private double major;   //Основные носители
-        private double minor;   //Неосновные носители
+        private double major;   //Концентрация основных носителей
+        private double minor;   //Концентрация неосновные носителей
+        private double nmu;     //Подвижность электронов
+        private double pmu;     //Подвижность дырок
         private double G;       //Проводимость полупроводника
-        private double R;
+        private double R;       //Сопротивление полупроводника
 
         public Material(int i) // Инициализация табличных данных
         {
             switch (i)
             {
                 case 0: //Si
-                    mun = 1500;     // (см^2 / B*c)
-                    mup = 450;      // (см^2 / B*c)
-                    Nc = 2.8E19;    // (см^-3)
-                    Nv = 1E19;      // (см^-3)
-                    phiz = 1.21;    // (эВ)
-                    mc = 1.08;
-                    mv = 0.56;
-                    ni = 1.45E10;
-                    B = 3.87E16;
+                    phiz = 1.21;    //+ (эВ)
+                    eps = 3E-4;     //+
+                    mc = 1.08;      //+
+                    mv = 0.56;      //+
+                    mun = 1400;     //+
+                    mup = 500;      //+
                     break;
                 case 1: //Ge
-                    mun = 3900;     // (см^2 / B*c)
-                    mup = 1900;     // (см^2 / B*c)
-                    Nc = 1E19;      // (см^-3)
-                    Nv = 6E18;      // (см^-3)
-                    phiz = 0.785;    // (эВ)
-                    mc = 0.55;
-                    mv = 0.37;
-                    ni = 2.4E13;
-                    B = 1.76E16;
+                    phiz = 0.75;    //+ (эВ)
+                    eps = 3E-4;     //+
+                    mc = 0.55;      //+
+                    mv = 0.39;      //+
+                    mun = 3800;     //+
+                    mup = 1800;      //+
                     break;
                 case 2: //GaAs
-                    mun = 8500;     // (см^2 / B*c)
-                    mup = 400;      // (см^2 / B*c)
-                    Nc = 4.7E17;    // (см^-3)
-                    Nv = 7E17;      // (см^-3)
-                    phiz = 1.52;   // (эВ)
-                    mc = 1.08;
-                    mv = 0.56;
-                    ni = 1.79E6;
+                    phiz = 1.52;    //+ (эВ)
+                    eps = 3E-4;     //+
+                    mc = 0.067;     //+
+                    mv = 0.45;      //+
+                    mun = 11000;     //+
+                    mup = 450;      //+
                     break;
                 case 3://InP - надо найти
                     mun = 0;    // (см^2 / B*c)
                     mup = 0;    // (см^2 / B*c)
-                    Nc = 0;     // (см^-3)
-                    Nv = 0;     // (см^-3)
                     phiz = 1.29;   // (эВ)
                     mc = 0;
                     mv = 0;
@@ -87,27 +77,44 @@ namespace WindowsFormElectronics
             this.isDonor = isDon;
             this.N = N;
             this.T = T;
+            this.Lx = Lx;
+            this.Ly = Ly;
+            this.Lz = Lz;
         }
 
         public void CalculateNi() // Расчет концентрации собственного полупроводника
         {
-            //Nc = Math.Sqrt(Math.Pow(mc, 3)) * Math.Sqrt(Math.Pow(T/300, 3)) * 2.5 * 1E19;
-            //Nv = Math.Sqrt(Math.Pow(mv, 3)) * Math.Sqrt(Math.Pow(T/300, 3)) * 2.5 * 1E19;
-            ni = B * Math.Sqrt(Math.Pow(T, 3)) * Math.Exp(-phiz/(2*k*T));
+            double Nc = Math.Sqrt(Math.Pow(mc, 3)) * Math.Sqrt(Math.Pow(T/300, 3)) * 2.5 * 1E19;
+            double Nv = Math.Sqrt(Math.Pow(mv, 3)) * Math.Sqrt(Math.Pow(T/300, 3)) * 2.5 * 1E19;
+            double fz = phiz - eps * T;
+            ni = Math.Sqrt(Nc * Nv) * Math.Exp(-fz / (2 * k * T));
+            Console.WriteLine("Nc - " + Nc.ToString());
+            Console.WriteLine("Nv - " + Nv.ToString());
+            Console.WriteLine("fz - " + fz.ToString());
+            Console.WriteLine("ni - " + ni.ToString());
+            Console.WriteLine();
         }
         public void CalculateG() // Расчет 
         {
             major = N;
             minor = Math.Pow(ni, 2) / major;
-            G = q * (major * (isDonor ? mun : mup) + minor * (isDonor ? mup : mun));
+            int n = 5;
+            double kn = (90 * mun * (n - 1)) / (90 * (90 * (n - 1) + 190));
+            double kp = (90 * mup * (n - 1)) / (90 * (90 * (n - 1) + 190));
+            nmu = kn * (T - 300) + mun;
+            pmu = kp * (T - 300) + mup;
+            G = q * (major * (isDonor ? nmu : pmu) + minor * (isDonor ? pmu : nmu));
+            Console.WriteLine("kn - " + kn.ToString());
+            Console.WriteLine("kp - " + kp.ToString());
+            Console.WriteLine("nmu - " + nmu.ToString());
+            Console.WriteLine("pmu - " + pmu.ToString());
+            Console.WriteLine();
         }
 
         public void CalculateR() // Расчет 
         {
-            major = N;
-            minor = Math.Pow(ni, 2) / major;
             double S = Lx * Ly;
-            R = Lz/(S*major*(isDonor?mun:mup));
+            R = Lz/(S*major*(isDonor?nmu:pmu));
         }
 
         public double GetNi()
@@ -134,13 +141,6 @@ namespace WindowsFormElectronics
 
         public void ShowData()
         {
-            Console.WriteLine("mun - " + mun.ToString());
-            Console.WriteLine("mup - " + mup.ToString());
-            Console.WriteLine("Nc - " + Nc.ToString());
-            Console.WriteLine("Nv - " + Nv.ToString());
-            Console.WriteLine("phiz - " + phiz.ToString());
-            Console.WriteLine("T - " + T.ToString());
-            Console.WriteLine("ni - " + ni.ToString());
             Console.WriteLine();
         }
     }
