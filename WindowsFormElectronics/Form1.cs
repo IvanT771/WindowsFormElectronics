@@ -106,8 +106,8 @@ namespace WindowsFormElectronics
             //Вывод данных
             richTextBox12.Text = G.ToString("#.#####E+0");
             richTextBox11.Text = ni.ToString("#.#####E+0");
-            richTextBox9.Text = major.ToString("#.#####E+0");
-            richTextBox10.Text = minor.ToString("#.#######E+0");
+            richTextBox10.Text = major.ToString("#.#####E+0");
+            richTextBox9.Text = minor.ToString("#.#######E+0");
             richTextBox8.Text = R.ToString("#.######E+0");
         }
         private void Form1_Resize2(object sender, EventArgs e)
