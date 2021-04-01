@@ -34,6 +34,11 @@ namespace WindowsFormElectronics
             this.panelLeft = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelInput = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.buttonInP = new System.Windows.Forms.Button();
+            this.buttonSi = new System.Windows.Forms.Button();
+            this.buttonGaAs = new System.Windows.Forms.Button();
+            this.buttonGe = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -47,10 +52,6 @@ namespace WindowsFormElectronics
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.buttonInP = new System.Windows.Forms.Button();
-            this.buttonGaAs = new System.Windows.Forms.Button();
-            this.buttonGe = new System.Windows.Forms.Button();
-            this.buttonSi = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelRight = new System.Windows.Forms.Panel();
@@ -75,11 +76,11 @@ namespace WindowsFormElectronics
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel3.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelInput.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panelRight.SuspendLayout();
@@ -87,7 +88,6 @@ namespace WindowsFormElectronics
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -142,6 +142,84 @@ namespace WindowsFormElectronics
             this.panelInput.Name = "panelInput";
             this.panelInput.Size = new System.Drawing.Size(390, 413);
             this.panelInput.TabIndex = 1;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.buttonInP);
+            this.groupBox2.Controls.Add(this.buttonSi);
+            this.groupBox2.Controls.Add(this.buttonGaAs);
+            this.groupBox2.Controls.Add(this.buttonGe);
+            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
+            this.groupBox2.Location = new System.Drawing.Point(8, 22);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(373, 90);
+            this.groupBox2.TabIndex = 14;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Материал";
+            // 
+            // buttonInP
+            // 
+            this.buttonInP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
+            this.buttonInP.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.buttonInP.FlatAppearance.BorderSize = 0;
+            this.buttonInP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonInP.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonInP.Location = new System.Drawing.Point(286, 30);
+            this.buttonInP.Name = "buttonInP";
+            this.buttonInP.Size = new System.Drawing.Size(64, 50);
+            this.buttonInP.TabIndex = 3;
+            this.buttonInP.Text = "InP";
+            this.buttonInP.UseVisualStyleBackColor = false;
+            this.buttonInP.Click += new System.EventHandler(this.ChoiceMaterial);
+            // 
+            // buttonSi
+            // 
+            this.buttonSi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
+            this.buttonSi.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.buttonSi.FlatAppearance.BorderSize = 3;
+            this.buttonSi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSi.Location = new System.Drawing.Point(23, 30);
+            this.buttonSi.Name = "buttonSi";
+            this.buttonSi.Size = new System.Drawing.Size(64, 50);
+            this.buttonSi.TabIndex = 0;
+            this.buttonSi.Text = "Si";
+            this.buttonSi.UseVisualStyleBackColor = false;
+            this.buttonSi.Click += new System.EventHandler(this.ChoiceMaterial);
+            // 
+            // buttonGaAs
+            // 
+            this.buttonGaAs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
+            this.buttonGaAs.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.buttonGaAs.FlatAppearance.BorderSize = 0;
+            this.buttonGaAs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGaAs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonGaAs.Location = new System.Drawing.Point(198, 30);
+            this.buttonGaAs.Name = "buttonGaAs";
+            this.buttonGaAs.Size = new System.Drawing.Size(64, 50);
+            this.buttonGaAs.TabIndex = 2;
+            this.buttonGaAs.Text = "GaAs";
+            this.buttonGaAs.UseVisualStyleBackColor = false;
+            this.buttonGaAs.Click += new System.EventHandler(this.ChoiceMaterial);
+            // 
+            // buttonGe
+            // 
+            this.buttonGe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
+            this.buttonGe.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
+            this.buttonGe.FlatAppearance.BorderSize = 0;
+            this.buttonGe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonGe.Location = new System.Drawing.Point(110, 30);
+            this.buttonGe.Name = "buttonGe";
+            this.buttonGe.Size = new System.Drawing.Size(64, 50);
+            this.buttonGe.TabIndex = 1;
+            this.buttonGe.Text = "Ge";
+            this.buttonGe.UseVisualStyleBackColor = false;
+            this.buttonGe.Click += new System.EventHandler(this.ChoiceMaterial);
             // 
             // groupBox1
             // 
@@ -325,66 +403,6 @@ namespace WindowsFormElectronics
             this.richTextBox2.Text = "";
             this.richTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTextBox1_KeyPress);
             // 
-            // buttonInP
-            // 
-            this.buttonInP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
-            this.buttonInP.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.buttonInP.FlatAppearance.BorderSize = 0;
-            this.buttonInP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInP.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonInP.Location = new System.Drawing.Point(286, 30);
-            this.buttonInP.Name = "buttonInP";
-            this.buttonInP.Size = new System.Drawing.Size(64, 50);
-            this.buttonInP.TabIndex = 3;
-            this.buttonInP.Text = "InP";
-            this.buttonInP.UseVisualStyleBackColor = false;
-            this.buttonInP.Click += new System.EventHandler(this.ChoiceMaterial);
-            // 
-            // buttonGaAs
-            // 
-            this.buttonGaAs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
-            this.buttonGaAs.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.buttonGaAs.FlatAppearance.BorderSize = 0;
-            this.buttonGaAs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGaAs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonGaAs.Location = new System.Drawing.Point(198, 30);
-            this.buttonGaAs.Name = "buttonGaAs";
-            this.buttonGaAs.Size = new System.Drawing.Size(64, 50);
-            this.buttonGaAs.TabIndex = 2;
-            this.buttonGaAs.Text = "GaAs";
-            this.buttonGaAs.UseVisualStyleBackColor = false;
-            this.buttonGaAs.Click += new System.EventHandler(this.ChoiceMaterial);
-            // 
-            // buttonGe
-            // 
-            this.buttonGe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
-            this.buttonGe.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.buttonGe.FlatAppearance.BorderSize = 0;
-            this.buttonGe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonGe.Location = new System.Drawing.Point(110, 30);
-            this.buttonGe.Name = "buttonGe";
-            this.buttonGe.Size = new System.Drawing.Size(64, 50);
-            this.buttonGe.TabIndex = 1;
-            this.buttonGe.Text = "Ge";
-            this.buttonGe.UseVisualStyleBackColor = false;
-            this.buttonGe.Click += new System.EventHandler(this.ChoiceMaterial);
-            // 
-            // buttonSi
-            // 
-            this.buttonSi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
-            this.buttonSi.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.buttonSi.FlatAppearance.BorderSize = 3;
-            this.buttonSi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSi.Location = new System.Drawing.Point(23, 30);
-            this.buttonSi.Name = "buttonSi";
-            this.buttonSi.Size = new System.Drawing.Size(64, 50);
-            this.buttonSi.TabIndex = 0;
-            this.buttonSi.Text = "Si";
-            this.buttonSi.UseVisualStyleBackColor = false;
-            this.buttonSi.Click += new System.EventHandler(this.ChoiceMaterial);
-            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.label1);
@@ -465,7 +483,7 @@ namespace WindowsFormElectronics
             this.richTextBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox8.Location = new System.Drawing.Point(252, 296);
+            this.richTextBox8.Location = new System.Drawing.Point(259, 294);
             this.richTextBox8.MaxLength = 100;
             this.richTextBox8.Multiline = false;
             this.richTextBox8.Name = "richTextBox8";
@@ -482,7 +500,7 @@ namespace WindowsFormElectronics
             this.richTextBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox9.Location = new System.Drawing.Point(252, 240);
+            this.richTextBox9.Location = new System.Drawing.Point(259, 240);
             this.richTextBox9.MaxLength = 100;
             this.richTextBox9.Multiline = false;
             this.richTextBox9.Name = "richTextBox9";
@@ -499,7 +517,7 @@ namespace WindowsFormElectronics
             this.richTextBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox10.Location = new System.Drawing.Point(252, 184);
+            this.richTextBox10.Location = new System.Drawing.Point(259, 184);
             this.richTextBox10.MaxLength = 100;
             this.richTextBox10.Multiline = false;
             this.richTextBox10.Name = "richTextBox10";
@@ -527,7 +545,7 @@ namespace WindowsFormElectronics
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label13.Location = new System.Drawing.Point(8, 128);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(220, 30);
+            this.label13.Size = new System.Drawing.Size(246, 30);
             this.label13.TabIndex = 3;
             this.label13.Text = "Собственная концентрация ni:";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -538,7 +556,7 @@ namespace WindowsFormElectronics
             this.richTextBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox11.Location = new System.Drawing.Point(252, 128);
+            this.richTextBox11.Location = new System.Drawing.Point(260, 128);
             this.richTextBox11.MaxLength = 100;
             this.richTextBox11.Multiline = false;
             this.richTextBox11.Name = "richTextBox11";
@@ -566,7 +584,7 @@ namespace WindowsFormElectronics
             this.richTextBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox12.Location = new System.Drawing.Point(252, 72);
+            this.richTextBox12.Location = new System.Drawing.Point(259, 72);
             this.richTextBox12.MaxLength = 100;
             this.richTextBox12.Multiline = false;
             this.richTextBox12.Name = "richTextBox12";
@@ -649,13 +667,13 @@ namespace WindowsFormElectronics
             // сохранитьКакToolStripMenuItem
             // 
             this.сохранитьКакToolStripMenuItem.Name = "сохранитьКакToolStripMenuItem";
-            this.сохранитьКакToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.сохранитьКакToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.сохранитьКакToolStripMenuItem.Text = "сохранить как";
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.выходToolStripMenuItem.Text = "выход";
             // 
             // справкаToolStripMenuItem
@@ -677,24 +695,6 @@ namespace WindowsFormElectronics
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.buttonInP);
-            this.groupBox2.Controls.Add(this.buttonSi);
-            this.groupBox2.Controls.Add(this.buttonGaAs);
-            this.groupBox2.Controls.Add(this.buttonGe);
-            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
-            this.groupBox2.Location = new System.Drawing.Point(8, 22);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(373, 90);
-            this.groupBox2.TabIndex = 14;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Материал";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -714,6 +714,7 @@ namespace WindowsFormElectronics
             this.panelLeft.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panelInput.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -723,7 +724,6 @@ namespace WindowsFormElectronics
             this.panel4.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
