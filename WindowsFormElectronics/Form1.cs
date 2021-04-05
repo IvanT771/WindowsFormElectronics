@@ -90,6 +90,7 @@ namespace WindowsFormElectronics
             //Сами расчеты ->
             MatArray[currentMaterial].CalculateNi();
             MatArray[currentMaterial].CalculateG();
+            MatArray[currentMaterial].CalculateR();
 
             double ni = 0;      //Концентрация собственного полупроводника
             double major = 0;      //Основные носители

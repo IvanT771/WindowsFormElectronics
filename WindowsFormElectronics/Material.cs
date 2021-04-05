@@ -114,7 +114,8 @@ namespace WindowsFormElectronics
         public void CalculateR() // Расчет 
         {
             double S = Lx * Ly;
-            R = Lz/(S*major*(isDonor?nmu:pmu));
+            R = Lz / (S * G);
+            Console.WriteLine("R - " + R.ToString());
         }
 
         public double GetNi()
