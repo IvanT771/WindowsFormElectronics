@@ -19,7 +19,6 @@ namespace WindowsFormElectronics
             //Инициализация табличных данных
             for (int i = 0; i < COUNT; i++)
                 MatArray[i] = new Material(i);
-            MatArray[0].ShowData();
         }
 
         const int COUNT = 4; //Количество материалов
@@ -86,6 +85,23 @@ namespace WindowsFormElectronics
                 return;
             }
 
+            if (T < 0 || T > 1000){
+                MessageBox.Show("Данные введены некорректно! Температура должна быть в диапазоне от 0К до 1000К", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (N < 0 || N > 10E25)
+            {
+                MessageBox.Show("Данные введены некорректно! Концентраци примеси должна быть в диапазоне от 0 до 10Е25", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (Lx < 0 || Lx > 10 || Ly < 0 || Ly > 10 || Lz < 0 || Lz > 10)
+            {
+                MessageBox.Show("Данные введены некорректно! Геометрические параметры должна быть в диапазоне от 0 до 10 см", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             MatArray[currentMaterial].SetInputData(isDonor, N, T, Lx, Ly, Lz);
             //Сами расчеты ->
             MatArray[currentMaterial].CalculateNi();
@@ -108,8 +124,8 @@ namespace WindowsFormElectronics
             richTextBox12.Text = G.ToString("#.#####E+0");
             richTextBox11.Text = ni.ToString("#.#####E+0");
             richTextBox10.Text = major.ToString("#.#####E+0");
-            richTextBox9.Text = minor.ToString("#.#######E+0");
-            richTextBox8.Text = R.ToString("#.######E+0");
+            richTextBox9.Text = minor.ToString("#.#####E+0");
+            richTextBox8.Text = R.ToString("#.#####E+0");
         }
         private void Form1_Resize2(object sender, EventArgs e)
         {
@@ -287,44 +303,7 @@ namespace WindowsFormElectronics
         //Обработчик заполнения полей textBox 
         private void richTextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(!(e.KeyChar >= '0' && e.KeyChar <= '9'))
-            {
-                if(e.KeyChar == ',' || e.KeyChar == '.' || e.KeyChar == 'б' || e.KeyChar == 'ю' || e.KeyChar == '/')
-                {
-                    if(((RichTextBox)sender).Text.IndexOf(',') == -1 && ((RichTextBox)sender).Text.Length > 0 && ((RichTextBox)sender).Text.IndexOf('E') == -1)
-                    {
-                        e.KeyChar = ',';
-                        e.Handled = false;
-                        return;
-                    }
-                }
-                if(e.KeyChar == 'E' || e.KeyChar == 'e' || e.KeyChar == 'у' || e.KeyChar == 'У')
-                {
-                    if(((RichTextBox)sender).Text.IndexOf('E') == -1 && ((RichTextBox)sender).Text.Length > 0)
-                    {
-                        e.KeyChar = 'E';
-                        e.Handled = false;
-                        return;
-                    }
-                }
-                if(e.KeyChar == '-')
-                {
-                    if (((RichTextBox)sender).Text.Length > 0)
-                    {
-                        if(((RichTextBox)sender).Text[((RichTextBox)sender).Text.Length-1] == 'E')
-                        {
-                            e.Handled = false;
-                            return;
-                        }
-                    }
-                    else
-                    {
-                        e.Handled = false;
-                        return;
-                    }
-                }
-                e.Handled = true;
-            }
+
         }
 
         //Кнопка сброса
@@ -358,22 +337,17 @@ namespace WindowsFormElectronics
             if (isDonor)
             {
                 // N - тип
-                label4.Text = "Концентрация примеси Nd:";
-                label12.Text = "Nn:";
-                label11.Text = "Pn:";
+                label4.Text = "Концентрация примеси Nd:(см:-3)";
+                label12.Text = "Nn:(см:-3)";
+                label11.Text = "Pn:(см:-3)";
             }
             else
             {
                 // P - тип
-                label4.Text = "Концентрация примеси Na:";
-                label12.Text = "Pp:";
-                label11.Text = "Np:";
+                label4.Text = "Концентрация примеси Na:(см:-3)";
+                label12.Text = "Pp:(см:-3)";
+                label11.Text = "Np:(см:-3)";
             }
-
-        }
-
-        private void panelRight_Paint(object sender, PaintEventArgs e)
-        {
 
         }
     }

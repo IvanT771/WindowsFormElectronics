@@ -265,7 +265,7 @@ namespace WindowsFormElectronics
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(220, 30);
             this.label8.TabIndex = 11;
-            this.label8.Text = "Длина Lz:";
+            this.label8.Text = "Длина Lz(см):";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label7
@@ -276,7 +276,7 @@ namespace WindowsFormElectronics
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(220, 30);
             this.label7.TabIndex = 10;
-            this.label7.Text = "Высота Ly:";
+            this.label7.Text = "Высота Ly(см):";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label6
@@ -287,7 +287,7 @@ namespace WindowsFormElectronics
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(220, 30);
             this.label6.TabIndex = 9;
-            this.label6.Text = "Ширина Lx:";
+            this.label6.Text = "Ширина Lx(см):";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // richTextBox6
@@ -296,16 +296,15 @@ namespace WindowsFormElectronics
             this.richTextBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox6.Location = new System.Drawing.Point(229, 344);
+            this.richTextBox6.Location = new System.Drawing.Point(256, 344);
             this.richTextBox6.MaxLength = 15;
             this.richTextBox6.Multiline = false;
             this.richTextBox6.Name = "richTextBox6";
             this.richTextBox6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.richTextBox6.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox6.Size = new System.Drawing.Size(152, 30);
+            this.richTextBox6.Size = new System.Drawing.Size(125, 30);
             this.richTextBox6.TabIndex = 5;
             this.richTextBox6.Text = "";
-            this.richTextBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTextBox1_KeyPress);
             // 
             // richTextBox5
             // 
@@ -313,16 +312,15 @@ namespace WindowsFormElectronics
             this.richTextBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox5.Location = new System.Drawing.Point(229, 308);
+            this.richTextBox5.Location = new System.Drawing.Point(256, 308);
             this.richTextBox5.MaxLength = 15;
             this.richTextBox5.Multiline = false;
             this.richTextBox5.Name = "richTextBox5";
             this.richTextBox5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.richTextBox5.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox5.Size = new System.Drawing.Size(152, 30);
+            this.richTextBox5.Size = new System.Drawing.Size(125, 30);
             this.richTextBox5.TabIndex = 4;
             this.richTextBox5.Text = "";
-            this.richTextBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTextBox1_KeyPress);
             // 
             // richTextBox4
             // 
@@ -330,16 +328,15 @@ namespace WindowsFormElectronics
             this.richTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox4.Location = new System.Drawing.Point(229, 272);
+            this.richTextBox4.Location = new System.Drawing.Point(256, 272);
             this.richTextBox4.MaxLength = 15;
             this.richTextBox4.Multiline = false;
             this.richTextBox4.Name = "richTextBox4";
             this.richTextBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.richTextBox4.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox4.Size = new System.Drawing.Size(152, 30);
+            this.richTextBox4.Size = new System.Drawing.Size(125, 30);
             this.richTextBox4.TabIndex = 3;
             this.richTextBox4.Text = "";
-            this.richTextBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTextBox1_KeyPress);
             // 
             // richTextBox3
             // 
@@ -347,16 +344,15 @@ namespace WindowsFormElectronics
             this.richTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox3.Location = new System.Drawing.Point(229, 236);
+            this.richTextBox3.Location = new System.Drawing.Point(256, 236);
             this.richTextBox3.MaxLength = 15;
             this.richTextBox3.Multiline = false;
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.richTextBox3.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox3.Size = new System.Drawing.Size(152, 30);
+            this.richTextBox3.Size = new System.Drawing.Size(125, 30);
             this.richTextBox3.TabIndex = 2;
             this.richTextBox3.Text = "";
-            this.richTextBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTextBox1_KeyPress);
             // 
             // label5
             // 
@@ -366,18 +362,18 @@ namespace WindowsFormElectronics
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(220, 30);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Температура T:";
+            this.label5.Text = "Температура T(K):";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.Location = new System.Drawing.Point(8, 200);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(220, 30);
+            this.label4.Size = new System.Drawing.Size(242, 30);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Концентрация примеси Na:";
+            this.label4.Text = "Концентрация примеси Na: (см^-3)";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // richTextBox2
@@ -386,16 +382,15 @@ namespace WindowsFormElectronics
             this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox2.Location = new System.Drawing.Point(229, 200);
+            this.richTextBox2.Location = new System.Drawing.Point(256, 200);
             this.richTextBox2.MaxLength = 15;
             this.richTextBox2.Multiline = false;
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox2.Size = new System.Drawing.Size(152, 30);
+            this.richTextBox2.Size = new System.Drawing.Size(125, 30);
             this.richTextBox2.TabIndex = 1;
             this.richTextBox2.Text = "";
-            this.richTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTextBox1_KeyPress);
             // 
             // panel5
             // 
@@ -428,7 +423,6 @@ namespace WindowsFormElectronics
             this.panelRight.Name = "panelRight";
             this.panelRight.Size = new System.Drawing.Size(414, 443);
             this.panelRight.TabIndex = 4;
-            this.panelRight.Paint += new System.Windows.Forms.PaintEventHandler(this.panelRight_Paint);
             // 
             // panel7
             // 
@@ -457,7 +451,7 @@ namespace WindowsFormElectronics
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(220, 30);
             this.label10.TabIndex = 10;
-            this.label10.Text = "Сопротивление R:";
+            this.label10.Text = "Сопротивление R(Ом):";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label11
@@ -468,7 +462,7 @@ namespace WindowsFormElectronics
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(220, 30);
             this.label11.TabIndex = 9;
-            this.label11.Text = "Np:";
+            this.label11.Text = "Np:(см:-3)";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // richTextBox8
@@ -477,14 +471,14 @@ namespace WindowsFormElectronics
             this.richTextBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox8.Location = new System.Drawing.Point(259, 294);
+            this.richTextBox8.Location = new System.Drawing.Point(284, 294);
             this.richTextBox8.MaxLength = 100;
             this.richTextBox8.Multiline = false;
             this.richTextBox8.Name = "richTextBox8";
             this.richTextBox8.ReadOnly = true;
             this.richTextBox8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.richTextBox8.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox8.Size = new System.Drawing.Size(152, 30);
+            this.richTextBox8.Size = new System.Drawing.Size(126, 30);
             this.richTextBox8.TabIndex = 7;
             this.richTextBox8.Text = "";
             // 
@@ -494,14 +488,14 @@ namespace WindowsFormElectronics
             this.richTextBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox9.Location = new System.Drawing.Point(259, 240);
+            this.richTextBox9.Location = new System.Drawing.Point(284, 240);
             this.richTextBox9.MaxLength = 100;
             this.richTextBox9.Multiline = false;
             this.richTextBox9.Name = "richTextBox9";
             this.richTextBox9.ReadOnly = true;
             this.richTextBox9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.richTextBox9.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox9.Size = new System.Drawing.Size(152, 30);
+            this.richTextBox9.Size = new System.Drawing.Size(126, 30);
             this.richTextBox9.TabIndex = 6;
             this.richTextBox9.Text = "";
             // 
@@ -511,14 +505,14 @@ namespace WindowsFormElectronics
             this.richTextBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox10.Location = new System.Drawing.Point(259, 184);
+            this.richTextBox10.Location = new System.Drawing.Point(284, 184);
             this.richTextBox10.MaxLength = 100;
             this.richTextBox10.Multiline = false;
             this.richTextBox10.Name = "richTextBox10";
             this.richTextBox10.ReadOnly = true;
             this.richTextBox10.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.richTextBox10.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox10.Size = new System.Drawing.Size(152, 30);
+            this.richTextBox10.Size = new System.Drawing.Size(126, 30);
             this.richTextBox10.TabIndex = 5;
             this.richTextBox10.Text = "";
             // 
@@ -530,18 +524,18 @@ namespace WindowsFormElectronics
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(220, 30);
             this.label12.TabIndex = 4;
-            this.label12.Text = "Pp:";
+            this.label12.Text = "Pp:(см:-3)";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label13
             // 
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label13.Location = new System.Drawing.Point(8, 128);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(246, 30);
+            this.label13.Size = new System.Drawing.Size(272, 30);
             this.label13.TabIndex = 3;
-            this.label13.Text = "Собственная концентрация ni:";
+            this.label13.Text = "Собственная концентрация ni(см^-3):";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // richTextBox11
@@ -550,26 +544,26 @@ namespace WindowsFormElectronics
             this.richTextBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox11.Location = new System.Drawing.Point(260, 128);
+            this.richTextBox11.Location = new System.Drawing.Point(286, 128);
             this.richTextBox11.MaxLength = 100;
             this.richTextBox11.Multiline = false;
             this.richTextBox11.Name = "richTextBox11";
             this.richTextBox11.ReadOnly = true;
             this.richTextBox11.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.richTextBox11.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox11.Size = new System.Drawing.Size(152, 30);
+            this.richTextBox11.Size = new System.Drawing.Size(126, 30);
             this.richTextBox11.TabIndex = 2;
             this.richTextBox11.Text = "";
             // 
             // label14
             // 
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label14.Location = new System.Drawing.Point(8, 72);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(220, 30);
+            this.label14.Size = new System.Drawing.Size(270, 30);
             this.label14.TabIndex = 1;
-            this.label14.Text = "Провод. полупроводника σ:";
+            this.label14.Text = "Провод. полупроводника σ:(См)";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // richTextBox12
@@ -578,14 +572,14 @@ namespace WindowsFormElectronics
             this.richTextBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox12.Location = new System.Drawing.Point(259, 72);
+            this.richTextBox12.Location = new System.Drawing.Point(284, 72);
             this.richTextBox12.MaxLength = 100;
             this.richTextBox12.Multiline = false;
             this.richTextBox12.Name = "richTextBox12";
             this.richTextBox12.ReadOnly = true;
             this.richTextBox12.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.richTextBox12.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox12.Size = new System.Drawing.Size(152, 30);
+            this.richTextBox12.Size = new System.Drawing.Size(126, 30);
             this.richTextBox12.TabIndex = 0;
             this.richTextBox12.Text = "";
             // 
@@ -659,7 +653,7 @@ namespace WindowsFormElectronics
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(930, 590);
+            this.MinimumSize = new System.Drawing.Size(930, 588);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel3.ResumeLayout(false);

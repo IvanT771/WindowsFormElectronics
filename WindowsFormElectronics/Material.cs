@@ -18,6 +18,8 @@ namespace WindowsFormElectronics
         private double mv;      //Эффективная масса дырок
         private double mun;     //Подвижность электронов
         private double mup;     //Подвижность дырок
+        private double Tion;    //Температура полной ионизации
+        private double Tmin;    //Температура при которой начинается ионизация
         //Входные данные
         private bool isDonor;   //Тип примеси
         private double N;       //Концентрация примеси
@@ -45,6 +47,8 @@ namespace WindowsFormElectronics
                     mv = 0.56;      //+
                     mun = 1400;     //+
                     mup = 500;      //+
+                    Tmin = 90;
+                    Tion = 180;
                     break;
                 case 1: //Ge
                     phiz = 0.75;    //+ (эВ)
@@ -53,6 +57,8 @@ namespace WindowsFormElectronics
                     mv = 0.39;      //+
                     mun = 3800;     //+
                     mup = 1800;      //+
+                    Tmin = 90;
+                    Tion = 170;
                     break;
                 case 2: //GaAs
                     phiz = 1.52;    //+ (эВ)
@@ -61,6 +67,8 @@ namespace WindowsFormElectronics
                     mv = 0.45;      //+
                     mun = 11000;     //+
                     mup = 450;      //+
+                    Tmin = 90;
+                    Tion = 170;
                     break;
                 case 3://InP - надо найти
                     mun = 0;    // (см^2 / B*c)
@@ -88,34 +96,38 @@ namespace WindowsFormElectronics
             double Nv = Math.Sqrt(Math.Pow(mv, 3)) * Math.Sqrt(Math.Pow(T/300, 3)) * 2.5 * 1E19;
             double fz = phiz - eps * T;
             ni = Math.Sqrt(Nc * Nv) * Math.Exp(-fz / (2 * k * T));
-            Console.WriteLine("Nc - " + Nc.ToString());
-            Console.WriteLine("Nv - " + Nv.ToString());
-            Console.WriteLine("fz - " + fz.ToString());
-            Console.WriteLine("ni - " + ni.ToString());
-            Console.WriteLine();
         }
         public void CalculateG() // Расчет 
         {
-            major = N;
-            minor = Math.Pow(ni, 2) / major;
+            if (T < Tmin)
+            {
+                major = 0;
+                minor = 0;
+            }
+            else if (T > Tmin && T < Tion)
+            {
+                major = N * (T - Tmin) / (Tion - Tmin);
+                minor = Math.Pow(ni, 2) / major;
+            }
+            else
+            {
+                major = Math.Sqrt(N * N / 4 + ni * ni) + N / 2;
+                minor = Math.Pow(ni, 2) / major;
+            }
+            major = major < 1 ? 0 : major;
+            minor = minor < 1 ? 0 : minor;
             int n = 5;
             double kn = (90 * mun * (n - 1)) / (90 * (90 * (n - 1) + 190));
             double kp = (90 * mup * (n - 1)) / (90 * (90 * (n - 1) + 190));
             nmu = kn * (T - 300) + mun;
             pmu = kp * (T - 300) + mup;
             G = q * (major * (isDonor ? nmu : pmu) + minor * (isDonor ? pmu : nmu));
-            Console.WriteLine("kn - " + kn.ToString());
-            Console.WriteLine("kp - " + kp.ToString());
-            Console.WriteLine("nmu - " + nmu.ToString());
-            Console.WriteLine("pmu - " + pmu.ToString());
-            Console.WriteLine();
         }
 
         public void CalculateR() // Расчет 
         {
             double S = Lx * Ly;
             R = Lz / (S * G);
-            Console.WriteLine("R - " + R.ToString());
         }
 
         public double GetNi()
@@ -138,11 +150,6 @@ namespace WindowsFormElectronics
         public double GetR()
         {
             return R;
-        }
-
-        public void ShowData()
-        {
-            Console.WriteLine();
         }
     }
 }
