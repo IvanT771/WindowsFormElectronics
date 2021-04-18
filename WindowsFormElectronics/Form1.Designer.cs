@@ -93,16 +93,15 @@ namespace WindowsFormElectronics
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1085, 678);
+            this.panel3.Size = new System.Drawing.Size(1085, 630);
             this.panel3.TabIndex = 3;
             // 
             // panelLeft
             // 
-            this.panelLeft.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panelLeft.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panelLeft.Controls.Add(this.panelInput);
             this.panelLeft.Controls.Add(this.panel5);
-            this.panelLeft.Location = new System.Drawing.Point(12, 56);
+            this.panelLeft.Location = new System.Drawing.Point(12, 36);
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(500, 515);
             this.panelLeft.TabIndex = 5;
@@ -139,9 +138,9 @@ namespace WindowsFormElectronics
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
-            this.groupBox2.Location = new System.Drawing.Point(5, 15);
+            this.groupBox2.Location = new System.Drawing.Point(8, 15);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(480, 104);
+            this.groupBox2.Size = new System.Drawing.Size(481, 104);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Материал";
@@ -149,6 +148,7 @@ namespace WindowsFormElectronics
             // buttonInP
             // 
             this.buttonInP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
+            this.buttonInP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonInP.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.buttonInP.FlatAppearance.BorderSize = 0;
             this.buttonInP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -164,6 +164,7 @@ namespace WindowsFormElectronics
             // buttonSi
             // 
             this.buttonSi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
+            this.buttonSi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSi.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.buttonSi.FlatAppearance.BorderSize = 3;
             this.buttonSi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -179,6 +180,7 @@ namespace WindowsFormElectronics
             // buttonGaAs
             // 
             this.buttonGaAs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
+            this.buttonGaAs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonGaAs.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.buttonGaAs.FlatAppearance.BorderSize = 0;
             this.buttonGaAs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -194,6 +196,7 @@ namespace WindowsFormElectronics
             // buttonGe
             // 
             this.buttonGe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
+            this.buttonGe.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonGe.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.buttonGe.FlatAppearance.BorderSize = 0;
             this.buttonGe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -225,6 +228,7 @@ namespace WindowsFormElectronics
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
+            this.radioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.radioButton2.Location = new System.Drawing.Point(290, 32);
             this.radioButton2.Name = "radioButton2";
@@ -238,6 +242,7 @@ namespace WindowsFormElectronics
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
+            this.radioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.radioButton1.Location = new System.Drawing.Point(17, 32);
             this.radioButton1.Name = "radioButton1";
@@ -288,7 +293,7 @@ namespace WindowsFormElectronics
             this.richTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
             this.richTextBox6.Location = new System.Drawing.Point(321, 400);
-            this.richTextBox6.MaxLength = 15;
+            this.richTextBox6.MaxLength = 2;
             this.richTextBox6.Multiline = false;
             this.richTextBox6.Name = "richTextBox6";
             this.richTextBox6.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -296,6 +301,7 @@ namespace WindowsFormElectronics
             this.richTextBox6.Size = new System.Drawing.Size(167, 34);
             this.richTextBox6.TabIndex = 5;
             this.richTextBox6.Text = "";
+            this.richTextBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTextBox1_KeyPress);
             // 
             // richTextBox5
             // 
@@ -304,7 +310,7 @@ namespace WindowsFormElectronics
             this.richTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
             this.richTextBox5.Location = new System.Drawing.Point(321, 357);
-            this.richTextBox5.MaxLength = 15;
+            this.richTextBox5.MaxLength = 2;
             this.richTextBox5.Multiline = false;
             this.richTextBox5.Name = "richTextBox5";
             this.richTextBox5.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -312,6 +318,7 @@ namespace WindowsFormElectronics
             this.richTextBox5.Size = new System.Drawing.Size(167, 34);
             this.richTextBox5.TabIndex = 4;
             this.richTextBox5.Text = "";
+            this.richTextBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTextBox1_KeyPress);
             // 
             // richTextBox4
             // 
@@ -320,7 +327,7 @@ namespace WindowsFormElectronics
             this.richTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
             this.richTextBox4.Location = new System.Drawing.Point(321, 317);
-            this.richTextBox4.MaxLength = 15;
+            this.richTextBox4.MaxLength = 2;
             this.richTextBox4.Multiline = false;
             this.richTextBox4.Name = "richTextBox4";
             this.richTextBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -328,6 +335,7 @@ namespace WindowsFormElectronics
             this.richTextBox4.Size = new System.Drawing.Size(167, 34);
             this.richTextBox4.TabIndex = 3;
             this.richTextBox4.Text = "";
+            this.richTextBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTextBox1_KeyPress);
             // 
             // richTextBox3
             // 
@@ -336,7 +344,7 @@ namespace WindowsFormElectronics
             this.richTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
             this.richTextBox3.Location = new System.Drawing.Point(321, 275);
-            this.richTextBox3.MaxLength = 15;
+            this.richTextBox3.MaxLength = 10;
             this.richTextBox3.Multiline = false;
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -344,6 +352,7 @@ namespace WindowsFormElectronics
             this.richTextBox3.Size = new System.Drawing.Size(167, 34);
             this.richTextBox3.TabIndex = 2;
             this.richTextBox3.Text = "";
+            this.richTextBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTextBox1_KeyPress);
             // 
             // label5
             // 
@@ -374,7 +383,7 @@ namespace WindowsFormElectronics
             this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
             this.richTextBox2.Location = new System.Drawing.Point(321, 232);
-            this.richTextBox2.MaxLength = 15;
+            this.richTextBox2.MaxLength = 10;
             this.richTextBox2.Multiline = false;
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -382,6 +391,7 @@ namespace WindowsFormElectronics
             this.richTextBox2.Size = new System.Drawing.Size(168, 34);
             this.richTextBox2.TabIndex = 1;
             this.richTextBox2.Text = "";
+            this.richTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTextBox1_KeyPress);
             // 
             // panel5
             // 
@@ -410,7 +420,7 @@ namespace WindowsFormElectronics
             this.panelRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.panelRight.Controls.Add(this.panel7);
             this.panelRight.Controls.Add(this.panel6);
-            this.panelRight.Location = new System.Drawing.Point(573, 56);
+            this.panelRight.Location = new System.Drawing.Point(573, 36);
             this.panelRight.Name = "panelRight";
             this.panelRight.Size = new System.Drawing.Size(500, 515);
             this.panelRight.TabIndex = 4;
@@ -462,14 +472,14 @@ namespace WindowsFormElectronics
             this.richTextBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox8.Location = new System.Drawing.Point(351, 344);
+            this.richTextBox8.Location = new System.Drawing.Point(328, 344);
             this.richTextBox8.MaxLength = 100;
             this.richTextBox8.Multiline = false;
             this.richTextBox8.Name = "richTextBox8";
             this.richTextBox8.ReadOnly = true;
             this.richTextBox8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.richTextBox8.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox8.Size = new System.Drawing.Size(146, 34);
+            this.richTextBox8.Size = new System.Drawing.Size(169, 34);
             this.richTextBox8.TabIndex = 7;
             this.richTextBox8.Text = "";
             // 
@@ -479,14 +489,14 @@ namespace WindowsFormElectronics
             this.richTextBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox9.Location = new System.Drawing.Point(351, 279);
+            this.richTextBox9.Location = new System.Drawing.Point(328, 279);
             this.richTextBox9.MaxLength = 100;
             this.richTextBox9.Multiline = false;
             this.richTextBox9.Name = "richTextBox9";
             this.richTextBox9.ReadOnly = true;
             this.richTextBox9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.richTextBox9.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox9.Size = new System.Drawing.Size(146, 34);
+            this.richTextBox9.Size = new System.Drawing.Size(169, 34);
             this.richTextBox9.TabIndex = 6;
             this.richTextBox9.Text = "";
             // 
@@ -496,14 +506,14 @@ namespace WindowsFormElectronics
             this.richTextBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox10.Location = new System.Drawing.Point(351, 214);
+            this.richTextBox10.Location = new System.Drawing.Point(328, 214);
             this.richTextBox10.MaxLength = 100;
             this.richTextBox10.Multiline = false;
             this.richTextBox10.Name = "richTextBox10";
             this.richTextBox10.ReadOnly = true;
             this.richTextBox10.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.richTextBox10.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox10.Size = new System.Drawing.Size(146, 34);
+            this.richTextBox10.Size = new System.Drawing.Size(169, 34);
             this.richTextBox10.TabIndex = 5;
             this.richTextBox10.Text = "";
             // 
@@ -524,7 +534,7 @@ namespace WindowsFormElectronics
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label13.Location = new System.Drawing.Point(3, 150);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(342, 35);
+            this.label13.Size = new System.Drawing.Size(319, 35);
             this.label13.TabIndex = 3;
             this.label13.Text = "Собственная концентрация ni (см^-3):";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -535,14 +545,14 @@ namespace WindowsFormElectronics
             this.richTextBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox11.Location = new System.Drawing.Point(351, 150);
+            this.richTextBox11.Location = new System.Drawing.Point(328, 150);
             this.richTextBox11.MaxLength = 100;
             this.richTextBox11.Multiline = false;
             this.richTextBox11.Name = "richTextBox11";
             this.richTextBox11.ReadOnly = true;
             this.richTextBox11.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.richTextBox11.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox11.Size = new System.Drawing.Size(146, 34);
+            this.richTextBox11.Size = new System.Drawing.Size(169, 34);
             this.richTextBox11.TabIndex = 2;
             this.richTextBox11.Text = "";
             // 
@@ -552,7 +562,7 @@ namespace WindowsFormElectronics
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label14.Location = new System.Drawing.Point(3, 85);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(342, 35);
+            this.label14.Size = new System.Drawing.Size(319, 35);
             this.label14.TabIndex = 1;
             this.label14.Text = "Проводимость полупроводника σ (см):";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -563,14 +573,14 @@ namespace WindowsFormElectronics
             this.richTextBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
             this.richTextBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(161)))), ((int)(((byte)(194)))));
-            this.richTextBox12.Location = new System.Drawing.Point(351, 85);
+            this.richTextBox12.Location = new System.Drawing.Point(328, 86);
             this.richTextBox12.MaxLength = 100;
             this.richTextBox12.Multiline = false;
             this.richTextBox12.Name = "richTextBox12";
             this.richTextBox12.ReadOnly = true;
             this.richTextBox12.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.richTextBox12.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox12.Size = new System.Drawing.Size(146, 34);
+            this.richTextBox12.Size = new System.Drawing.Size(169, 34);
             this.richTextBox12.TabIndex = 0;
             this.richTextBox12.Text = "";
             // 
@@ -597,11 +607,12 @@ namespace WindowsFormElectronics
             // 
             // button2
             // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderSize = 3;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(44)))), ((int)(((byte)(59)))));
-            this.button2.Location = new System.Drawing.Point(12, 579);
+            this.button2.Location = new System.Drawing.Point(12, 557);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(500, 52);
             this.button2.TabIndex = 1;
@@ -611,11 +622,12 @@ namespace WindowsFormElectronics
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 3;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(108)))), ((int)(((byte)(233)))));
-            this.button1.Location = new System.Drawing.Point(573, 579);
+            this.button1.Location = new System.Drawing.Point(573, 557);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(500, 52);
             this.button1.TabIndex = 0;
@@ -626,15 +638,20 @@ namespace WindowsFormElectronics
             // panel1
             // 
             this.panel1.Controls.Add(this.button3);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1085, 30);
             this.panel1.TabIndex = 4;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Dock = System.Windows.Forms.DockStyle.Right;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -653,14 +670,14 @@ namespace WindowsFormElectronics
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
-            this.ClientSize = new System.Drawing.Size(1085, 678);
+            this.ClientSize = new System.Drawing.Size(1085, 630);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1085, 678);
+            this.MinimumSize = new System.Drawing.Size(1085, 630);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel3.ResumeLayout(false);
