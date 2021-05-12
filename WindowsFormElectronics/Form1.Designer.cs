@@ -31,13 +31,13 @@ namespace WindowsFormElectronics
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.panelInput = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.buttonInP = new System.Windows.Forms.Button();
-            this.buttonSi = new System.Windows.Forms.Button();
-            this.buttonGaAs = new System.Windows.Forms.Button();
-            this.buttonGe = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -67,8 +67,6 @@ namespace WindowsFormElectronics
             this.richTextBox12 = new System.Windows.Forms.RichTextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
@@ -95,6 +93,36 @@ namespace WindowsFormElectronics
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1085, 630);
             this.panel3.TabIndex = 3;
+            // 
+            // button2
+            // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 3;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(44)))), ((int)(((byte)(59)))));
+            this.button2.Location = new System.Drawing.Point(12, 557);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(500, 52);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Сбросить";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 3;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(108)))), ((int)(((byte)(233)))));
+            this.button1.Location = new System.Drawing.Point(573, 557);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(500, 52);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Произвести расчёт";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button_Calculation);
             // 
             // panelLeft
             // 
@@ -131,10 +159,8 @@ namespace WindowsFormElectronics
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.buttonInP);
-            this.groupBox2.Controls.Add(this.buttonSi);
-            this.groupBox2.Controls.Add(this.buttonGaAs);
-            this.groupBox2.Controls.Add(this.buttonGe);
+            this.groupBox2.Controls.Add(this.button4);
+            this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(211)))), ((int)(((byte)(160)))));
@@ -145,69 +171,25 @@ namespace WindowsFormElectronics
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Материал";
             // 
-            // buttonInP
+            // button4
             // 
-            this.buttonInP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
-            this.buttonInP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonInP.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.buttonInP.FlatAppearance.BorderSize = 0;
-            this.buttonInP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInP.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonInP.Location = new System.Drawing.Point(334, 35);
-            this.buttonInP.Name = "buttonInP";
-            this.buttonInP.Size = new System.Drawing.Size(75, 58);
-            this.buttonInP.TabIndex = 3;
-            this.buttonInP.Text = "InP";
-            this.buttonInP.UseVisualStyleBackColor = false;
-            this.buttonInP.Click += new System.EventHandler(this.ChoiceMaterial);
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(313, 45);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(138, 32);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "Настройки";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // buttonSi
+            // comboBox1
             // 
-            this.buttonSi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
-            this.buttonSi.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSi.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.buttonSi.FlatAppearance.BorderSize = 3;
-            this.buttonSi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSi.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSi.Location = new System.Drawing.Point(27, 35);
-            this.buttonSi.Name = "buttonSi";
-            this.buttonSi.Size = new System.Drawing.Size(75, 58);
-            this.buttonSi.TabIndex = 0;
-            this.buttonSi.Text = "Si";
-            this.buttonSi.UseVisualStyleBackColor = false;
-            this.buttonSi.Click += new System.EventHandler(this.ChoiceMaterial);
-            // 
-            // buttonGaAs
-            // 
-            this.buttonGaAs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
-            this.buttonGaAs.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonGaAs.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.buttonGaAs.FlatAppearance.BorderSize = 0;
-            this.buttonGaAs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGaAs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonGaAs.Location = new System.Drawing.Point(231, 35);
-            this.buttonGaAs.Name = "buttonGaAs";
-            this.buttonGaAs.Size = new System.Drawing.Size(75, 58);
-            this.buttonGaAs.TabIndex = 2;
-            this.buttonGaAs.Text = "GaAs";
-            this.buttonGaAs.UseVisualStyleBackColor = false;
-            this.buttonGaAs.Click += new System.EventHandler(this.ChoiceMaterial);
-            // 
-            // buttonGe
-            // 
-            this.buttonGe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(51)))), ((int)(((byte)(72)))));
-            this.buttonGe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonGe.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
-            this.buttonGe.FlatAppearance.BorderSize = 0;
-            this.buttonGe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonGe.Location = new System.Drawing.Point(128, 35);
-            this.buttonGe.Name = "buttonGe";
-            this.buttonGe.Size = new System.Drawing.Size(75, 58);
-            this.buttonGe.TabIndex = 1;
-            this.buttonGe.Text = "Ge";
-            this.buttonGe.UseVisualStyleBackColor = false;
-            this.buttonGe.Click += new System.EventHandler(this.ChoiceMaterial);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(17, 45);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(240, 32);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // groupBox1
             // 
@@ -605,36 +587,6 @@ namespace WindowsFormElectronics
             this.label2.Text = "Результат";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
-            // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 3;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(44)))), ((int)(((byte)(59)))));
-            this.button2.Location = new System.Drawing.Point(12, 557);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(500, 52);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Сбросить";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 3;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(108)))), ((int)(((byte)(233)))));
-            this.button1.Location = new System.Drawing.Point(573, 557);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(500, 52);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Произвести расчёт";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button_Calculation);
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.button3);
@@ -702,10 +654,6 @@ namespace WindowsFormElectronics
         private System.Windows.Forms.Panel panelRight;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button buttonGe;
-        private System.Windows.Forms.Button buttonSi;
-        private System.Windows.Forms.Button buttonInP;
-        private System.Windows.Forms.Button buttonGaAs;
         private System.Windows.Forms.Panel panelInput;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RichTextBox richTextBox2;
@@ -737,6 +685,8 @@ namespace WindowsFormElectronics
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button4;
     }
 }
 

@@ -12,41 +12,32 @@ namespace WindowsFormElectronics
 {
     public partial class Form1 : Form
     {
+        private bool isDonor = false; //Тип примеси
+        private Material[] materials; //Материалы
+        private MathCalculations calculations;
+
         public Form1()
         {
+            calculations = new MathCalculations();
             InitializeComponent();
-
-            //Инициализация табличных данных
-            for (int i = 0; i < COUNT; i++)
-                MatArray[i] = new Material(i);
+            MaterialsInitialize();
         }
 
-        const int COUNT = 4; //Количество материалов
-
-        enum IndexMaterial //Индексация материалов (Чтобы знать под каким номером какой материал)
+        public void MaterialsInitialize()
         {
-            Si = 0,
-            Ge = 1,
-            GaAs = 2,
-            InP = 3
+            materials = SaveSystem.LoadData().materials;
+
+            comboBox1.Items.Clear();
+
+            foreach (var item in materials)
+            {
+                comboBox1.Items.Add(item.name);
+            }
+
+            comboBox1.SelectedIndex = 0;
         }
-        int currentMaterial = 0; //Индекс текущего материала
-        Material[] MatArray = new Material[4];
 
-
-        private bool isDonor = false; //Тип примеси
-
-        //Метод обработки нажатия на кнопки с материалом
-        private void ChoiceMaterial(object obj, EventArgs e)
-        {
-            buttonSi.FlatAppearance.BorderSize = 0;
-            buttonGe.FlatAppearance.BorderSize = 0;
-            buttonGaAs.FlatAppearance.BorderSize = 0;
-            buttonInP.FlatAppearance.BorderSize = 0;
-
-            ((Button)obj).FlatAppearance.BorderSize = 3;
-            currentMaterial = ((Button)obj).TabIndex;
-        }
+        
 
         //Метод защиты ввода 
         private bool isProtect()
@@ -103,11 +94,12 @@ namespace WindowsFormElectronics
                 return;
             }
 
-            MatArray[currentMaterial].SetInputData(isDonor, N, T, Lx, Ly, Lz);
+            calculations.SetInputData(isDonor, N, T, Lx, Ly, Lz);
+
             //Сами расчеты ->
-            MatArray[currentMaterial].CalculateNi();
-            MatArray[currentMaterial].CalculateG();
-            MatArray[currentMaterial].CalculateR();
+            calculations.CalculateNi();
+            calculations.CalculateG();
+            calculations.CalculateR();
 
             double ni = 0;      //Концентрация собственного полупроводника
             double major = 0;      //Основные носители
@@ -115,11 +107,11 @@ namespace WindowsFormElectronics
             double G = 0;       //Проводимость полупроводника
             double R = 0;       //Сопротивление
 
-            ni = MatArray[currentMaterial].GetNi();
-            G = MatArray[currentMaterial].GetG();
-            major = MatArray[currentMaterial].GetMajor();
-            minor = MatArray[currentMaterial].GetMinor();
-            R = MatArray[currentMaterial].GetR();
+            ni = calculations.GetNi();
+            G = calculations.GetG();
+            major = calculations.GetMajor();
+            minor = calculations.GetMinor();
+            R = calculations.GetR();
 
             //Вывод данных
             richTextBox12.Text = G.ToString("#.#####E+0");
@@ -249,5 +241,21 @@ namespace WindowsFormElectronics
 
         }
         #endregion
+
+        //Кнопка настройки материалов
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form f1 = new SettingsMaterial();
+            f1.ShowDialog();
+        }
+
+        //Смена материала
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(materials == null){  MaterialsInitialize();}
+            if(comboBox1.SelectedIndex>= materials.Length || comboBox1.SelectedIndex < 0) { return;}
+            MessageBox.Show(comboBox1.SelectedIndex.ToString());
+            calculations.ChoiceCurrentMaterial(materials[comboBox1.SelectedIndex]);
+        }
     }
 }
