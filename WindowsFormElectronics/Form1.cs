@@ -15,9 +15,11 @@ namespace WindowsFormElectronics
         private bool isDonor = false; //Тип примеси
         private Material[] materials; //Материалы
         private MathCalculations calculations;
+        public static Form1 mainForm;
 
         public Form1()
         {
+            mainForm = this;
             calculations = new MathCalculations();
             InitializeComponent();
             MaterialsInitialize();
@@ -254,7 +256,6 @@ namespace WindowsFormElectronics
         {
             if(materials == null){  MaterialsInitialize();}
             if(comboBox1.SelectedIndex>= materials.Length || comboBox1.SelectedIndex < 0) { return;}
-            MessageBox.Show(comboBox1.SelectedIndex.ToString());
             calculations.ChoiceCurrentMaterial(materials[comboBox1.SelectedIndex]);
         }
     }

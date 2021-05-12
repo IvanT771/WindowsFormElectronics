@@ -95,6 +95,7 @@ namespace WindowsFormElectronics
         //Метод закрытия формы "Настройка материала"
         private void buttonCLoseApplication(object sender, EventArgs e)
         {
+            Form1.mainForm.MaterialsInitialize();
             this.Close();
         }
 
@@ -186,6 +187,10 @@ namespace WindowsFormElectronics
             MessageBox.Show("Данные успешно сохранены","Уведомление",MessageBoxButtons.OK,MessageBoxIcon.Information);
             MaterialInit();
             comboBox1.SelectedIndex = b;
+            if(Form1.mainForm != null)
+            {
+                Form1.mainForm.MaterialsInitialize();
+            }
         }
 
         private void richTextBox9_KeyPress(object sender, KeyPressEventArgs e)
