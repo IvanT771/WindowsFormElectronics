@@ -31,6 +31,8 @@ namespace WindowsFormElectronics
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.panelInput = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -67,8 +69,6 @@ namespace WindowsFormElectronics
             this.richTextBox12 = new System.Windows.Forms.RichTextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
@@ -95,6 +95,36 @@ namespace WindowsFormElectronics
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1085, 630);
             this.panel3.TabIndex = 3;
+            // 
+            // button2
+            // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 3;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(44)))), ((int)(((byte)(59)))));
+            this.button2.Location = new System.Drawing.Point(12, 557);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(500, 52);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Сбросить";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 3;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(108)))), ((int)(((byte)(233)))));
+            this.button1.Location = new System.Drawing.Point(573, 557);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(500, 52);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Произвести расчёт";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button_Calculation);
             // 
             // panelLeft
             // 
@@ -459,11 +489,11 @@ namespace WindowsFormElectronics
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(3, 279);
+            this.label11.Location = new System.Drawing.Point(3, 275);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(257, 35);
+            this.label11.Size = new System.Drawing.Size(319, 44);
             this.label11.TabIndex = 9;
-            this.label11.Text = "Np (см^-3):";
+            this.label11.Text = "Концентрация неосновных носителей (см^-3):";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // richTextBox8
@@ -521,11 +551,11 @@ namespace WindowsFormElectronics
             // 
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(3, 214);
+            this.label12.Location = new System.Drawing.Point(3, 203);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(257, 35);
+            this.label12.Size = new System.Drawing.Size(319, 52);
             this.label12.TabIndex = 4;
-            this.label12.Text = "Pp (см^-3):";
+            this.label12.Text = "Концентрация основных носителей (см^-3):";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label13
@@ -604,36 +634,6 @@ namespace WindowsFormElectronics
             this.label2.TabIndex = 0;
             this.label2.Text = "Результат";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button2
-            // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 3;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(44)))), ((int)(((byte)(59)))));
-            this.button2.Location = new System.Drawing.Point(12, 557);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(500, 52);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Сбросить";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 3;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(108)))), ((int)(((byte)(233)))));
-            this.button1.Location = new System.Drawing.Point(573, 557);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(500, 52);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Произвести расчёт";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button_Calculation);
             // 
             // panel1
             // 

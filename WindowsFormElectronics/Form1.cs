@@ -23,13 +23,6 @@ namespace WindowsFormElectronics
 
         const int COUNT = 4; //Количество материалов
 
-        enum IndexMaterial //Индексация материалов (Чтобы знать под каким номером какой материал)
-        {
-            Si = 0,
-            Ge = 1,
-            GaAs = 2,
-            InP = 3
-        }
         int currentMaterial = 0; //Индекс текущего материала
         Material[] MatArray = new Material[4];
 
@@ -206,15 +199,11 @@ namespace WindowsFormElectronics
             {
                 // N - тип
                 label4.Text = "Концентрация примеси Nd (см^-3):";
-                label12.Text = "Nn (см^-3):";
-                label11.Text = "Pn (см^-3):";
             }
             else
             {
                 // P - тип
                 label4.Text = "Концентрация примеси Na (см^-3):";
-                label12.Text = "Pp (см^-3):";
-                label11.Text = "Np (см^-3):";
             }
 
         }
