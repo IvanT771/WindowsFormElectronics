@@ -5,7 +5,6 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormElectronics
@@ -254,6 +253,7 @@ namespace WindowsFormElectronics
         //Смена материала
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            groupBox1.Focus();
             if(materials == null){  MaterialsInitialize();}
             if(comboBox1.SelectedIndex>= materials.Length || comboBox1.SelectedIndex < 0) { return;}
             calculations.ChoiceCurrentMaterial(materials[comboBox1.SelectedIndex]);

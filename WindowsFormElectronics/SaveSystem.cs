@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
 using System.IO;
@@ -13,7 +11,7 @@ namespace WindowsFormElectronics
     {
         public static void SaveData(Material[] materials)
         {
-            string path = Application.CommonAppDataPath+"Data.mt";
+            string path = Application.CommonAppDataPath + "Data.mt";
             AllMaterials data = new AllMaterials(materials);
 
             using (FileStream stream = new FileStream(path,FileMode.Create))
@@ -46,6 +44,7 @@ namespace WindowsFormElectronics
         public static AllMaterials LoadData()
         {
             string path = Application.CommonAppDataPath + "Data.mt";
+            Console.WriteLine(path);
             if (!File.Exists(path)) { return LoadDefaultData();}
 
             using (FileStream stream = new FileStream(path, FileMode.Open))
