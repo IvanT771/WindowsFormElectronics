@@ -444,11 +444,11 @@ namespace WindowsFormElectronics
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(3, 279);
+            this.label11.Location = new System.Drawing.Point(3, 275);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(257, 35);
+            this.label11.Size = new System.Drawing.Size(319, 44);
             this.label11.TabIndex = 9;
-            this.label11.Text = "Np (см^-3):";
+            this.label11.Text = "Концентрация неосновных носителей (см^-3):";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // richTextBox8
@@ -506,11 +506,11 @@ namespace WindowsFormElectronics
             // 
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(3, 214);
+            this.label12.Location = new System.Drawing.Point(3, 203);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(257, 35);
+            this.label12.Size = new System.Drawing.Size(319, 52);
             this.label12.TabIndex = 4;
-            this.label12.Text = "Pp (см^-3):";
+            this.label12.Text = "Концентрация основных носителей (см^-3):";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label13
