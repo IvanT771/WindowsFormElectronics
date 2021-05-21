@@ -24,16 +24,10 @@ namespace WindowsFormElectronics
             MaterialsInitialize();
         }
 
-<<<<<<< HEAD
+
         public void MaterialsInitialize()
         {
             materials = SaveSystem.LoadData().materials;
-=======
-        const int COUNT = 4; //Количество материалов
-
-        int currentMaterial = 0; //Индекс текущего материала
-        Material[] MatArray = new Material[4];
->>>>>>> 4127f6a51a176791cf183e40b2a01192c26e3e47
 
             comboBox1.Items.Clear();
 
